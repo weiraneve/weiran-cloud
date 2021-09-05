@@ -1,0 +1,25 @@
+--------------> 2021-09-05 21:56:53 [main] INFO  c.w.s.StudentmanagerApplication - Starting StudentmanagerApplication on weiran-air with PID 8522 (/Users/sunweiran/Downloads/weiran-cloud/studentmanager/target/classes started by sunweiran in /Users/sunweiran/Downloads/weiran-cloud)
+--------------> 2021-09-05 21:56:53 [main] INFO  c.w.s.StudentmanagerApplication - No active profile set, falling back to default profiles: default
+--------------> 2021-09-05 21:56:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-05 21:56:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-05 21:56:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-05 21:56:53 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-05 21:56:53 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-05 21:56:53 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-05 21:56:53 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-05 21:56:53 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-05 21:56:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-05 21:56:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-05 21:56:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-05 21:56:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-05 21:56:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-05 21:56:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 937 ms
+--------------> 2021-09-05 21:56:54 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-05 21:56:54 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-05 21:56:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-05 21:56:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-05 21:56:55 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-05 21:56:55 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-05 21:56:55 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-05 21:56:55 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 2.216 seconds (JVM running for 2.751)
+--------------> 2021-09-05 21:56:59 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

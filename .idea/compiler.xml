@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="missionplanning-dal" />
+        <module name="weiran-common" />
+        <module name="studentmanager" />
+        <module name="missionplanning-biz" />
+        <module name="missionplanning-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mission" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="missionplanning-api" options="-parameters" />
+      <module name="missionplanning-biz" options="-parameters" />
+      <module name="missionplanning-dal" options="-parameters" />
+      <module name="studentmanager" options="-parameters" />
+      <module name="weiran-common" options="-parameters" />
+    </option>
+  </component>
+</project>

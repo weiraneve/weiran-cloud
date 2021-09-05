@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+      location:  /data/upload_tmp
