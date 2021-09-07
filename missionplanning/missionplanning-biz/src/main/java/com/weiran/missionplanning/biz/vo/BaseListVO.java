@@ -7,9 +7,6 @@ import java.util.List;
 
 /**
  * discription:
- *
- * @author wujinzhu@weiran.com
- * @date 2021/4/7 15:12
  */
 @Data
 public class BaseListVO<T> implements Serializable {

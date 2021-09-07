@@ -10,9 +10,6 @@ import javax.servlet.annotation.WebListener;
 
 /**
  * discription:
- *
- * @author wujinzhu@weiran.com
- * @date 2021/6/7 17:04
  */
 @Slf4j
 @WebListener

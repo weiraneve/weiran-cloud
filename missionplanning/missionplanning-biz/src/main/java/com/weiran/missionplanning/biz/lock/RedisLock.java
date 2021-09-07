@@ -5,9 +5,6 @@ import com.weiran.common.jedis.JedisUtil;
 
 /**
  * discription: redis分布式锁 实现类（非注解式）
- *
- * @author luobin@weiran.com
- * @date 2018/12/27 0027 13:16
  */
 public class RedisLock {
 

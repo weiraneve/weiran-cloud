@@ -7,9 +7,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * discription:
- *
- * @author wujinzhu@weiran.com
- * @date 2021/6/7 16:56
  */
 public class SessionUtil {
     /**

@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * discription:
- *
- * @author luobin@weiran.com
- * @date 2021/4/19 0019 18:19
  */
 @FeignClient(value = "jouav-cloud-uaa", fallback = UssoClientFallback.class, configuration = FeignConfiger.class)
 public interface UssoClient {

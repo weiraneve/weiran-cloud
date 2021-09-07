@@ -1,0 +1,65 @@
+#server:
+#  port: 8080
+#
+#spring:
+#  application:
+#    name: cloud-studentmanager
+##  cloud:
+##    inetutils:
+##      preferred-networks:
+##        - 172.30.30 #局域网调试时可使用此配置
+#    nacos:
+#      discovery:
+#        server-addr: 121.36.18.64:8888 #服务注册中心地址
+#        namespace: jouav-weiran
+#        username: nacos
+#        password: Jouav1234
+##        ip: 119.3.189.81 #服务所在服务器ip（一般线上服务器使用此配置）
+#      config:
+#        server-addr: 121.36.18.64:8888 #配置中心地址
+#        file-extension: yaml #指定yaml格式的配置
+#        namespace: jouav-weiran
+#        username: nacos
+#        password: Jouav1234
+#
+#
+#management:
+#  endpoints:
+#    enabled-by-default: true
+#    web:
+#      exposure:
+#        # 开启监控端点
+#        include: '*'
+#
+## 断路时间(加大文件传输的超时时间)
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 60000
+#
+## 负载均衡
+#ribbon:
+#  # 读取超时
+#  ReadTimeout: 15000
+#  # 连接超时
+#  ConnectTimeout: 15000
+#  # 最大重试次数，当注册中心中可以找到服务，但是服务连不上时将会重试
+#  MaxAutoRetries: 1
+#  # 切换实例的重试次数
+#  MaxAutoRetriesNextServer: 0
+#  # 对所有的操作请求都进行重试，如果是get则可以，如果是post,put等操作没有实现幂等的情况下是很危险的
+#  OkToRetryOnAllOperations: false
+#
+#feign:
+#  hystrix:
+#    # 开启断路器
+#    enabled: true
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 5000
+#        readTimeout: 5000
+#        loggerLevel: basic

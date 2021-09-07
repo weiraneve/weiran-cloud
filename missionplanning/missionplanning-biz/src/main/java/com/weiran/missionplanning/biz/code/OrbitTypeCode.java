@@ -2,8 +2,6 @@ package com.weiran.missionplanning.biz.code;
 
 /**
  * @description： 盘旋方式
- * @Author: aoxiaoqin@weiran.com
- * @Date: 2021/7/13 19:45
  **/
 public enum OrbitTypeCode {
 

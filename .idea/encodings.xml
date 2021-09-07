@@ -6,5 +6,7 @@
     <file url="file://$PROJECT_DIR$/missionplanning/missionplanning-biz/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/studentmanager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiran-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiran-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiran-txserver/src/main/java" charset="UTF-8" />
   </component>
 </project>

@@ -19,9 +19,6 @@ import java.util.List;
 
 /**
  * discription:
- *
- * @author luobin@weiran.com
- * @date 2021/3/3 0003 10:07
  */
 @Configuration
 @EnableSwagger2
@@ -43,7 +40,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo("【纵横云平台3.0】 接口文档"))
+                .apiInfo(apiInfo("接口文档"))
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.weiran.missionplanning.api.controller"))
                 .paths(PathSelectors.any())
@@ -58,14 +55,14 @@ public class SwaggerConfig implements WebMvcConfigurer {
                 // 设置标题
                 .title(title)
                 // 作者信息
-                .contact(new Contact("robin", "", "luobin@weiran.com"))
+                .contact(new Contact("weiran", "", ""))
                 // 版本
                 .version("1.0.0")
                 // 描述
-                .description("【任务规划】接口文档")
+                .description("接口文档")
                 .build();
     }
-
+    // 授权
     private ApiKey apiKey() {
         return new ApiKey("Bearer", "Authorization", "header");
     }

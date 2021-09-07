@@ -1,7 +1,7 @@
 package com.weiran.common.utils;
 
-import com.jouav.jouavcloud.common.code.CodeDesc;
-import com.jouav.jouavcloud.common.obj.ResultMsgObj;
+import com.weiran.common.code.CodeDesc;
+import com.weiran.common.obj.ResultMsgObj;
 import org.springframework.validation.BindingResult;
 
 import java.util.HashMap;
@@ -9,9 +9,6 @@ import java.util.Map;
 
 /**
  * discription: 参数拦截
- *
- * @author luobin@jouav.com
- * @date 2020/8/19 0019 17:20
  */
 public class ParameterInterceptionUtil {
 
