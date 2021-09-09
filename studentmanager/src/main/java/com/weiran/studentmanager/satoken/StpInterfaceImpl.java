@@ -1,4 +1,4 @@
-package com.weiran.studentmanager.sa;
+package com.weiran.studentmanager.satoken;
 
 import cn.dev33.satoken.stp.StpInterface;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
@@ -17,8 +17,6 @@ import java.util.List;
 
 /**
  * 自定义权限验证接口扩展
- * @author kong
- *
  */
 @Component
 @RequiredArgsConstructor

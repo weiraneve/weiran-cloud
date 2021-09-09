@@ -31,6 +31,10 @@ public class AjaxJson implements Serializable{
 		return this.code;
 	}
 
+	public void setCode(int code) {
+		this.code = code;
+	}
+
 	/**
 	 * 给msg赋值，连缀风格
 	 */
@@ -66,6 +70,8 @@ public class AjaxJson implements Serializable{
 		this.data = data;
 		this.dataCount = dataCount;
 	}
+
+	public AjaxJson() {}
 	
 	// 返回成功
 	public static AjaxJson getSuccess() {

@@ -1,4 +1,4 @@
-package com.weiran.basegateway.config;
+package com.weiran.gateway.config;
 
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

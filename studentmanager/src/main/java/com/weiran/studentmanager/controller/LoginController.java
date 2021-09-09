@@ -20,16 +20,25 @@ import org.springframework.web.bind.annotation.*;
  * @Description 登陆
  */
 @Slf4j
-@RestController
+@Controller
 public class LoginController {
 
     @Autowired
     private UserManager userManager;
 
     /**
+     * 鉴权后的主页面
+     */
+    @RequestMapping("/main")
+    public String getMain() {
+        return "/main";
+    }
+
+    /**
      * @description 登陆表单提交、校验
      */
-    @RequestMapping("/login")
+    @RequestMapping(value = "/login", produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
     public AjaxResult submitLogin(String username, String password){
         AjaxResult ajaxResult = new AjaxResult();
         if (StringUtils.isEmpty(username)) {
@@ -90,7 +99,8 @@ public class LoginController {
     /**
      *  查询登录状态，浏览器访问
      */
-    @RequestMapping("isLogin")
+    @RequestMapping("/isLogin")
+    @ResponseBody
     public String isLogin() {
         return "当前会话是否登录：" + StpUtil.isLogin();
     }

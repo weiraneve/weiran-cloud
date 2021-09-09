@@ -1,12 +1,12 @@
-package com.weiran.basegateway.fallback;
+package com.weiran.gateway.fallback;
 
-import com.weiran.basegateway.model.ErrorCode;
-import com.weiran.basegateway.model.Msg;
+import com.weiran.gateway.model.ErrorCode;
+import com.weiran.gateway.model.Msg;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * discription:
+ * discription: 熔断回调
  */
 @RestController
 public class FallbackController {

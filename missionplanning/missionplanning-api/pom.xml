@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>missionplanning-api</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>com.weiran.cloud</groupId>
@@ -27,6 +28,10 @@
             <artifactId>weiran-common</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-hystrix</artifactId>
         </dependency>
     </dependencies>
 

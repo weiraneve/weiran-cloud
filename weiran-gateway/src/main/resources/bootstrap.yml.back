@@ -1,27 +1,22 @@
 server:
-  port: 8908
+  port: 8205
 
 spring:
   application:
-    name: jouav-cloud-mission-planning
+    name: jouav-cloud-gateway
   cloud:
-    inetutils:
-      preferred-networks:
-        - 172.30.30 #局域网调试时可使用此配置
     nacos:
       discovery:
         server-addr: 121.36.18.64:8888 #服务注册中心地址
-        namespace: jouav-weiran
+        namespace: jouav-guangxi-dev
         username: nacos
         password: Jouav1234
-      #        ip: 119.3.189.81 #服务所在服务器ip（一般线上服务器使用此配置）
-      config:
-        server-addr: 121.36.18.64:8888 #配置中心地址
-        file-extension: yaml #指定yaml格式的配置
-        namespace: jouav-weiran
-        username: nacos
-        password: Jouav1234
-
+#      config:
+#        server-addr: 121.36.18.64:8888 #配置中心地址
+#        file-extension: yaml #指定yaml格式的配置
+#        namespace: jouav-guangxi-dev
+#        username: nacos
+#        password: Jouav1234
 
 management:
   endpoints:
@@ -39,7 +34,6 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
-
 # 负载均衡
 ribbon:
   # 读取超时
@@ -57,9 +51,3 @@ feign:
   hystrix:
     # 开启断路器
     enabled: true
-  client:
-    config:
-      default:
-        connectTimeout: 5000
-        readTimeout: 5000
-        loggerLevel: basic

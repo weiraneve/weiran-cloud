@@ -1,4 +1,4 @@
-//package com.weiran.basegateway.config;
+//package com.weiran.gateway.config;
 //
 //
 //import org.springframework.context.annotation.Bean;

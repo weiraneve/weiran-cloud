@@ -58,23 +58,7 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.4.1</version>
         </dependency>
-        <!-- Sa-Token 权限认证, 在线文档：http://sa-token.dev33.cn/ -->
-        <dependency>
-            <groupId>cn.dev33</groupId>
-            <artifactId>sa-token-spring-boot-starter</artifactId>
-            <version>${saToken.version}</version>
-        </dependency>
-        <!-- Sa-Token 整合 Redis （使用jdk默认序列化方式） -->
-        <dependency>
-            <groupId>cn.dev33</groupId>
-            <artifactId>sa-token-dao-redis</artifactId>
-            <version>${saToken.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.dev33</groupId>
-            <artifactId>sa-token-core</artifactId>
-            <version>${saToken.version}</version>
-        </dependency>
+<!--  在微服务架构中使用Sa-Token时，网关和内部服务要分开引入Sa-Token依赖（不要直接在顶级父pom中引入Sa-Token）-->
         <!-- fastjson格式转换 -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -133,6 +117,28 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Sa-Token 权限认证,  不要直接在顶级父pom中引入Sa-Token-->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-spring-boot-starter</artifactId>
+                <version>${saToken.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-reactor-spring-boot-starter</artifactId>
+                <version>${saToken.version}</version>
+            </dependency>
+            <!-- Sa-Token 整合 Redis （使用jdk默认序列化方式） -->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-dao-redis</artifactId>
+                <version>${saToken.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-core</artifactId>
+                <version>${saToken.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

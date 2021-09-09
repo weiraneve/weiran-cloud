@@ -1,8 +1,7 @@
-package com.weiran.studentmanager.sa;
+package com.weiran.studentmanager.satoken;
 
 import cn.dev33.satoken.listener.SaTokenListener;
 import cn.dev33.satoken.stp.SaLoginModel;
-import org.springframework.stereotype.Component;
 
 /**
  * 自定义侦听器的实现

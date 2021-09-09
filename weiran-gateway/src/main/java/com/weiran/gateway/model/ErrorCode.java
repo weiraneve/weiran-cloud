@@ -1,4 +1,4 @@
-package com.weiran.basegateway.model;
+package com.weiran.gateway.model;
 
 
 public class ErrorCode {

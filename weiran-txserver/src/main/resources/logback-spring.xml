@@ -25,7 +25,7 @@
         <file>${log.path}/txServer.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--按每分钟保存日志 修改格式可以按小时、按天、月来保存-->
-            <fileNamePattern>${log.path}/txServer.log%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>${log.path}/txServer-%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
             <totalSizeCap>1GB</totalSizeCap>
         </rollingPolicy>

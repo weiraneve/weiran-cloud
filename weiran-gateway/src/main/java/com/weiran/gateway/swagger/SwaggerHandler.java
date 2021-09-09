@@ -1,4 +1,4 @@
-package com.weiran.basegateway.swagger;
+package com.weiran.gateway.swagger;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +12,9 @@ import springfox.documentation.swagger.web.*;
 
 /**
  * discription: Swagger-ui需要依赖的一些接口
+ *
+ * @author luobin@jouav.com
+ * @date 2021/3/8 0008 18:59
  */
 @RestController
 public class SwaggerHandler {

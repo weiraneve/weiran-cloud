@@ -1,4 +1,7 @@
 spring:
+  main:
+    # 一个启动时候的覆盖bug
+    allow-bean-definition-overriding: true
   profiles:
     active: weiran
   servlet:

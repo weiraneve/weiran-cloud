@@ -1,12 +1,10 @@
 package com.weiran.studentmanager.controller;
 
-import cn.dev33.satoken.annotation.SaCheckLogin;
-import cn.dev33.satoken.annotation.SaCheckPermission;
-import cn.dev33.satoken.annotation.SaCheckRole;
-import cn.dev33.satoken.annotation.SaMode;
+import cn.dev33.satoken.annotation.*;
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import com.weiran.studentmanager.util.AjaxJson;
+import org.checkerframework.checker.units.qual.A;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -45,6 +43,17 @@ public class TestController {
             System.out.println("没有登陆");
         }
         return AjaxJson.getSuccessData(tokenInfo);
+    }
+
+    // 以注解方式启用 Basic 校验
+    @SaCheckBasic(account = "sa:123456")
+    @RequestMapping("/testbasic")
+    public AjaxJson testBasic() {
+        AjaxJson ajaxJson = new AjaxJson();
+        ajaxJson.setCode(200);
+        ajaxJson.setMsg("注解方式启用 Basic 校验成功！");
+
+        return ajaxJson;
     }
 
 }
