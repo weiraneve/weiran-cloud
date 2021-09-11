@@ -1,0 +1,1029 @@
+--------------> 2021-09-11 08:26:08 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 08:26:08 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 08:26:08 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 08:26:08 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 08:26:08 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 08:26:08 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 08:26:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 08:26:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 08:26:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 08:26:09 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 08:26:09 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 08:26:09 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 08:26:09 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 08:26:09 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 08:26:09 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 08:26:09 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=cbb7f33b-5f91-35b1-ac3e-13605388be4c
+--------------> 2021-09-11 08:26:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 08:26:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 08:26:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 08:26:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 08:26:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 08:26:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1222 ms
+--------------> 2021-09-11 08:26:10 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 08:26:10 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 08:26:10 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 08:26:10 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 08:26:10 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-11 08:26:10 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 08:26:10 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 08:26:10 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 08:26:10 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 08:26:11 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 08:26:11 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 08:26:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 08:26:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-11 08:26:11 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8080, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 08:26:11 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-studentmanager 192.168.1.4:8080 register finished
+--------------> 2021-09-11 08:26:11 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-11 08:26:11 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-11 08:26:11 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-11 08:26:11 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 4.487 seconds (JVM running for 4.93)
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager-weiran.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager-weiran.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 08:26:12 [RMI TCP Connection(3)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 08:26:12 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 08:26:12 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+--------------> 2021-09-11 08:26:12 [RMI TCP Connection(2)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 08:26:12 [RMI TCP Connection(2)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 08:26:12 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 08:26:12 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 08:27:12 [Thread-18] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 08:27:12 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 08:27:12 [Thread-18] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 08:27:12 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-studentmanager:192.168.1.4:8080 from beat map.
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 08:27:13 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 08:27:13 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> []
+--------------> 2021-09-11 08:27:13 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 08:27:16 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+--------------> 2021-09-11 15:21:19 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 15:21:19 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 15:21:19 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 15:21:20 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 15:21:20 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 15:21:20 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 15:21:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 15:21:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 15:21:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 15:21:20 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 15:21:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:21:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:21:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:21:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:21:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 15:21:20 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=90f6620a-6f7e-3926-9f47-60b9b8735891
+--------------> 2021-09-11 15:21:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 15:21:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 15:21:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 15:21:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 15:21:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 15:21:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 927 ms
+--------------> 2021-09-11 15:21:21 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 15:21:21 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 15:21:21 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 15:21:21 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 15:21:21 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-11 15:21:21 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 15:21:21 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 15:21:21 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 15:21:21 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 15:21:22 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 15:21:22 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 15:21:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 15:21:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-11 15:21:22 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8080, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 15:21:22 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 15:21:22 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-studentmanager 192.168.1.4:8080 register finished
+--------------> 2021-09-11 15:21:22 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-11 15:21:22 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-11 15:21:22 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-11 15:21:22 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 3.724 seconds (JVM running for 4.137)
+--------------> 2021-09-11 15:21:22 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:21:22 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:21:22 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager-weiran.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:21:22 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager-weiran.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:21:22 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:21:22 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:21:22 [RMI TCP Connection(2)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 15:21:22 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 15:21:22 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+--------------> 2021-09-11 15:21:23 [RMI TCP Connection(3)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 15:21:23 [RMI TCP Connection(3)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 15:21:23 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 15:21:23 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 15:28:15 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 15:28:15 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 15:28:15 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 15:28:15 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 15:28:15 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 15:28:15 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 15:28:15 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-studentmanager:192.168.1.4:8080 from beat map.
+--------------> 2021-09-11 15:28:15 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 15:28:15 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 15:28:15 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 15:28:15 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 15:28:15 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 15:28:17 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 15:28:17 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> []
+--------------> 2021-09-11 15:28:17 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 15:28:20 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+--------------> 2021-09-11 15:28:25 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 15:28:25 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 15:28:25 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 15:28:25 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 15:28:25 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 15:28:25 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 15:28:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 15:28:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 15:28:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 15:28:26 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 15:28:26 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:28:26 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:28:26 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:28:26 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:28:26 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 15:28:26 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=90f6620a-6f7e-3926-9f47-60b9b8735891
+--------------> 2021-09-11 15:28:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 15:28:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 15:28:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 15:28:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 15:28:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 15:28:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 922 ms
+--------------> 2021-09-11 15:28:27 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 15:28:27 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 15:28:27 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 15:28:27 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 15:28:27 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-11 15:28:27 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 15:28:27 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 15:28:27 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 15:28:27 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 15:28:27 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 15:28:27 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 15:28:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 15:28:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-11 15:28:28 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8080, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 15:28:28 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 15:28:28 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-studentmanager 192.168.1.4:8080 register finished
+--------------> 2021-09-11 15:28:28 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-11 15:28:28 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-11 15:28:28 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-11 15:28:28 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 3.514 seconds (JVM running for 4.271)
+--------------> 2021-09-11 15:28:28 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:28:28 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:28:28 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager-weiran.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:28:28 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager-weiran.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:28:28 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:28:28 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:28:28 [RMI TCP Connection(2)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 15:28:28 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 15:28:28 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+--------------> 2021-09-11 15:28:28 [RMI TCP Connection(3)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 15:28:28 [RMI TCP Connection(3)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 15:28:29 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 15:28:29 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 15:33:59 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 15:33:59 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 15:33:59 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 15:33:59 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 15:33:59 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 15:33:59 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 15:33:59 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-studentmanager:192.168.1.4:8080 from beat map.
+--------------> 2021-09-11 15:33:59 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 15:33:59 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 15:33:59 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 15:34:01 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 15:34:01 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> []
+--------------> 2021-09-11 15:34:02 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 15:34:02 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 15:34:03 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 15:34:06 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+--------------> 2021-09-11 15:34:10 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 15:34:10 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 15:34:11 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 15:34:11 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 15:34:11 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 15:34:11 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 15:34:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 15:34:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 15:34:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 15:34:11 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 15:34:12 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:34:12 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:34:12 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:34:12 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:34:12 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 15:34:12 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=90f6620a-6f7e-3926-9f47-60b9b8735891
+--------------> 2021-09-11 15:34:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 15:34:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 15:34:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 15:34:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 15:34:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 15:34:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1250 ms
+--------------> 2021-09-11 15:34:12 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 15:34:12 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 15:34:12 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 15:34:13 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 15:34:13 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-11 15:34:13 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 15:34:13 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 15:34:13 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 15:34:13 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 15:34:13 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 15:34:13 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 15:34:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 15:34:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-11 15:34:13 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8080, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 15:34:13 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 15:34:13 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-studentmanager 192.168.1.4:8080 register finished
+--------------> 2021-09-11 15:34:13 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-11 15:34:13 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-11 15:34:13 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-11 15:34:13 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 3.78 seconds (JVM running for 4.387)
+--------------> 2021-09-11 15:34:13 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:34:13 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:34:13 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager-weiran.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:34:13 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager-weiran.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:34:13 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:34:13 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:34:14 [RMI TCP Connection(3)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 15:34:14 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 15:34:14 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+--------------> 2021-09-11 15:34:14 [RMI TCP Connection(2)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 15:34:14 [RMI TCP Connection(2)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 15:34:14 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 15:34:14 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 15:43:09 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 15:43:09 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 15:43:09 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 15:43:09 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 15:43:09 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 15:43:09 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 15:43:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-studentmanager:192.168.1.4:8080 from beat map.
+--------------> 2021-09-11 15:43:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 15:43:09 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 15:43:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 15:43:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 15:43:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 15:43:15 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 15:43:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+--------------> 2021-09-11 15:43:22 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 15:43:22 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 15:43:22 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 15:43:22 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 15:43:22 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 15:43:22 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 15:43:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 15:43:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 15:43:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 15:43:23 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 15:43:23 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:43:23 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:43:23 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:43:23 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 15:43:23 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 15:43:23 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=90f6620a-6f7e-3926-9f47-60b9b8735891
+--------------> 2021-09-11 15:43:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 15:43:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 15:43:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 15:43:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 15:43:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 15:43:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1366 ms
+--------------> 2021-09-11 15:43:24 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 15:43:24 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 15:43:24 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 15:43:25 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 15:43:25 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-11 15:43:25 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 15:43:25 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 15:43:25 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 15:43:25 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 15:43:25 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 15:43:25 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 15:43:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 15:43:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-11 15:43:25 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8080, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 15:43:25 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 15:43:25 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-studentmanager 192.168.1.4:8080 register finished
+--------------> 2021-09-11 15:43:25 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-11 15:43:25 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-11 15:43:25 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-11 15:43:25 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 3.859 seconds (JVM running for 4.582)
+--------------> 2021-09-11 15:43:25 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:43:25 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:43:25 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager-weiran.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:43:25 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager-weiran.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:43:25 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 15:43:25 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 15:43:26 [RMI TCP Connection(3)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 15:43:26 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 15:43:26 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+--------------> 2021-09-11 15:43:26 [RMI TCP Connection(2)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 15:43:26 [RMI TCP Connection(2)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 15:43:26 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
+--------------> 2021-09-11 15:43:26 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
+--------------> 2021-09-11 16:18:52 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 16:18:52 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 16:18:52 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 16:18:52 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 16:18:52 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 16:18:52 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 16:18:52 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-studentmanager:192.168.1.4:8080 from beat map.
+--------------> 2021-09-11 16:18:52 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 16:18:52 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 16:18:52 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 16:18:55 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 16:18:55 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 16:18:58 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 16:19:01 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+--------------> 2021-09-11 16:19:04 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 16:19:04 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 16:19:04 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 16:19:04 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 16:19:04 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 16:19:04 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 16:19:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 16:19:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 16:19:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 16:19:05 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 16:19:05 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 16:19:05 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 16:19:05 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 16:19:05 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 16:19:05 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 16:19:05 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=90f6620a-6f7e-3926-9f47-60b9b8735891
+--------------> 2021-09-11 16:19:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 16:19:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 16:19:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 16:19:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 16:19:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 16:19:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 836 ms
+--------------> 2021-09-11 16:19:05 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 16:19:05 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 16:19:05 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 16:19:06 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 16:19:06 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-11 16:19:06 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 16:19:06 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 16:19:06 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 16:19:06 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 16:19:06 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 16:19:06 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 16:19:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 16:19:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-11 16:19:06 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8080, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 16:19:06 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 16:19:06 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-studentmanager 192.168.1.4:8080 register finished
+--------------> 2021-09-11 16:19:06 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-11 16:19:06 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-11 16:19:06 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-11 16:19:06 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 3.109 seconds (JVM running for 3.827)
+--------------> 2021-09-11 16:19:06 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 16:19:06 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 16:19:06 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager-weiran.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 16:19:06 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager-weiran.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 16:19:06 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 16:19:06 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 16:19:06 [RMI TCP Connection(2)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 16:19:06 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 16:19:06 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+--------------> 2021-09-11 16:19:06 [RMI TCP Connection(3)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 16:19:07 [RMI TCP Connection(3)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 16:19:07 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 16:19:07 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 16:23:07 [http-nio-8080-exec-7] WARN  c.w.s.exception.GlobalException - 无效ticket：oWKX0JbejkrnQmX2dWvzq66vqxSHwji5aeLT9fAE219QG3YGXUgBj7XUAhTwqp0R
+--------------> 2021-09-11 16:24:03 [http-nio-8080-exec-9] WARN  c.w.s.exception.GlobalException - 无效ticket：h2xEBbLL3ycr36U182GECKzk0rs8ith6n2VVrTey9n8tNSNNx5pVZddm41eNDNZl
+--------------> 2021-09-11 16:24:10 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 16:24:10 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 16:24:10 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 16:24:10 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 16:24:10 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 16:24:10 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 16:24:10 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-studentmanager:192.168.1.4:8080 from beat map.
+--------------> 2021-09-11 16:24:10 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 16:24:10 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 16:24:10 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 16:24:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 16:24:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 16:24:15 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 16:24:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+--------------> 2021-09-11 19:09:02 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 19:09:02 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:09:02 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:09:02 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 19:09:02 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 19:09:02 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 19:09:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 19:09:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 19:09:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 19:09:03 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 19:09:03 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:09:03 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:09:03 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:09:03 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:09:03 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 19:09:03 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=90f6620a-6f7e-3926-9f47-60b9b8735891
+--------------> 2021-09-11 19:09:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 19:09:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 19:09:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 19:09:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 19:09:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 19:09:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1303 ms
+--------------> 2021-09-11 19:09:04 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 19:09:04 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 19:09:04 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 19:09:05 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 19:09:05 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-11 19:09:05 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 19:09:05 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 19:09:05 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 19:09:05 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 19:09:05 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 19:09:05 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 19:09:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 19:09:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-11 19:09:05 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8080, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 19:09:05 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 19:09:06 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-studentmanager 192.168.1.4:8080 register finished
+--------------> 2021-09-11 19:09:06 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-11 19:09:06 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-11 19:09:06 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-11 19:09:06 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 4.842 seconds (JVM running for 5.407)
+--------------> 2021-09-11 19:09:06 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 19:09:06 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 19:09:06 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager-weiran.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 19:09:06 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager-weiran.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 19:09:06 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 19:09:06 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 19:09:06 [RMI TCP Connection(4)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 19:09:06 [RMI TCP Connection(4)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 19:09:06 [RMI TCP Connection(4)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+--------------> 2021-09-11 19:09:06 [RMI TCP Connection(5)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 19:09:06 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 19:09:06 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 19:09:06 [RMI TCP Connection(5)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 19:18:35 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 19:18:35 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> []
+--------------> 2021-09-11 19:18:44 [com.alibaba.nacos.naming.beat.sender] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 19:18:49 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 19:18:49 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+--------------> 2021-09-11 19:29:14 [Thread-19] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 19:29:14 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 19:29:14 [Thread-19] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 19:29:14 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 19:29:14 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 19:29:14 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 19:29:14 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-studentmanager:192.168.1.4:8080 from beat map.
+--------------> 2021-09-11 19:29:14 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 19:29:14 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 19:29:14 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 19:29:16 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 19:29:16 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 19:29:19 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 19:29:22 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+--------------> 2021-09-11 19:34:27 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 19:34:27 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:34:27 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:34:27 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 19:34:27 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 19:34:27 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 19:34:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 19:34:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 19:34:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 19:34:27 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 19:34:28 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:34:28 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:34:28 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:34:28 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:34:28 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 19:34:28 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=96cdfff3-7ff7-3d69-a358-59989b1970c1
+--------------> 2021-09-11 19:34:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 19:34:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 19:34:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 19:34:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 19:34:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 19:34:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 928 ms
+--------------> 2021-09-11 19:34:28 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+--------------> 2021-09-11 19:34:28 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+--------------> 2021-09-11 19:34:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+--------------> 2021-09-11 19:34:28 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.weiran.studentmanager.StudentmanagerApplication.main(StudentmanagerApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 37 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 51 common frames omitted
+--------------> 2021-09-11 19:34:28 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 19:34:28 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 19:35:38 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 19:35:38 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:35:38 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:35:38 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 19:35:38 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 19:35:38 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 19:35:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 19:35:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 19:35:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 19:35:39 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 19:35:39 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:35:39 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:35:39 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:35:39 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:35:39 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 19:35:39 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=96cdfff3-7ff7-3d69-a358-59989b1970c1
+--------------> 2021-09-11 19:35:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 19:35:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 19:35:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 19:35:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 19:35:39 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 19:35:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 992 ms
+--------------> 2021-09-11 19:35:40 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+--------------> 2021-09-11 19:35:40 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+--------------> 2021-09-11 19:35:40 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+--------------> 2021-09-11 19:35:40 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.weiran.studentmanager.StudentmanagerApplication.main(StudentmanagerApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 37 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 51 common frames omitted
+--------------> 2021-09-11 19:35:40 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 19:35:40 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 19:36:19 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 19:36:19 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:36:19 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:36:19 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 19:36:19 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 19:36:19 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 19:36:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 19:36:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 19:36:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 19:36:20 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 19:36:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:36:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:36:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:36:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:36:20 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 19:36:20 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=240ce171-74e7-3dc2-a749-59abdb67b765
+--------------> 2021-09-11 19:36:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 19:36:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 19:36:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 19:36:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 19:36:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 19:36:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 833 ms
+--------------> 2021-09-11 19:36:21 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+--------------> 2021-09-11 19:36:21 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+--------------> 2021-09-11 19:36:21 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+--------------> 2021-09-11 19:36:21 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.weiran.studentmanager.StudentmanagerApplication.main(StudentmanagerApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/sunweiran/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 37 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ssoH5Controller' method 
+com.weiran.studentmanager.controller.SsoH5Controller#isLogin()
+to { /isLogin}: There is already 'loginController' bean method
+com.weiran.studentmanager.controller.LoginController#isLogin() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 51 common frames omitted
+--------------> 2021-09-11 19:36:21 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 19:36:21 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 19:37:34 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 19:37:34 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:37:34 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-studentmanager.yaml] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 19:37:34 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 19:37:34 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager-weiran.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-studentmanager,DEFAULT_GROUP'}]
+--------------> 2021-09-11 19:37:34 [main] INFO  c.w.s.StudentmanagerApplication - The following profiles are active: weiran
+--------------> 2021-09-11 19:37:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 19:37:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 19:37:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 19:37:35 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 19:37:35 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'permissionMapper' and 'com.weiran.studentmanager.mapper.PermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:37:35 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleMapper' and 'com.weiran.studentmanager.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:37:35 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'rolePermissionMapper' and 'com.weiran.studentmanager.mapper.RolePermissionMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:37:35 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.weiran.studentmanager.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+--------------> 2021-09-11 19:37:35 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.weiran.studentmanager.mapper]' package. Please check your configuration.
+--------------> 2021-09-11 19:37:35 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=240ce171-74e7-3dc2-a749-59abdb67b765
+--------------> 2021-09-11 19:37:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+--------------> 2021-09-11 19:37:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 19:37:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 19:37:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 19:37:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 19:37:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 853 ms
+--------------> 2021-09-11 19:37:36 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 19:37:36 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 19:37:36 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 19:37:36 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 19:37:36 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+--------------> 2021-09-11 19:37:36 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 19:37:36 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 19:37:36 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 19:37:36 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 19:37:36 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 19:37:36 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 19:37:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+--------------> 2021-09-11 19:37:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+--------------> 2021-09-11 19:37:36 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8080, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-studentmanager', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 19:37:36 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 19:37:37 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-studentmanager 192.168.1.4:8080 register finished
+--------------> 2021-09-11 19:37:37 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+--------------> 2021-09-11 19:37:37 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+--------------> 2021-09-11 19:37:37 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+--------------> 2021-09-11 19:37:37 [main] INFO  c.w.s.StudentmanagerApplication - Started StudentmanagerApplication in 3.299 seconds (JVM running for 3.844)
+--------------> 2021-09-11 19:37:37 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 19:37:37 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 19:37:37 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager-weiran.yaml+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 19:37:37 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager-weiran.yaml, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 19:37:37 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-studentmanager+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 19:37:37 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-studentmanager, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 19:37:37 [RMI TCP Connection(2)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 19:37:37 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 19:37:37 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+--------------> 2021-09-11 19:37:37 [RMI TCP Connection(3)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 19:37:37 [RMI TCP Connection(3)-192.168.1.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 19:37:38 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 19:37:38 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-studentmanager@@DEFAULT -> [{"instanceId":"192.168.1.4#8080#DEFAULT#DEFAULT_GROUP@@jouav-cloud-studentmanager","ip":"192.168.1.4","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-studentmanager","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 19:39:02 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 19:39:02 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 19:39:02 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 19:39:02 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 19:39:02 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 19:39:02 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 19:39:02 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-studentmanager:192.168.1.4:8080 from beat map.
+--------------> 2021-09-11 19:39:02 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-studentmanager with instance: Instance{instanceId='null', ip='192.168.1.4', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 19:39:02 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 19:39:02 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 19:39:03 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 19:39:03 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 19:39:06 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 19:39:09 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

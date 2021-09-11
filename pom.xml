@@ -10,6 +10,8 @@
         <module>studentmanager</module>
         <module>weiran-txserver</module>
         <module>weiran-gateway</module>
+        <module>weiran-oauth2</module>
+        <module>weiran-sso</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>

@@ -1,42 +1,53 @@
-//package com.weiran.gateway.satoken;
-//
-//
-//import cn.dev33.satoken.reactor.filter.SaReactorFilter;
-//import cn.dev33.satoken.router.SaRouter;
-//import cn.dev33.satoken.stp.StpUtil;
-//import cn.dev33.satoken.util.SaResult;
-//import org.springframework.context.annotation.Bean;
-//import org.springframework.context.annotation.Configuration;
-//
-///**
-// * [Sa-Token 权限认证] 配置类
-// */
-//@Configuration
-//public class SaTokenConfigure {
-//    // 注册 Sa-Token全局过滤器
-//    @Bean
-//    public SaReactorFilter getSaReactorFilter() {
-//        return new SaReactorFilter()
-//                // 拦截地址
-//                .addInclude("/**")
-//                // 开放地址
-//                .addExclude("/favicon.ico")
-//                // 鉴权方法：每次访问进入
-//                .setAuth(r -> {
-//                    // 登录验证 -- 拦截所有路由，并排除/user/doLogin 用于开放登录
-//                    SaRouter.match("/**", "/user/doLogin", () -> StpUtil.checkLogin());
-//
-//                    // 权限认证 -- 不同模块, 校验不同权限
-//                    SaRouter.match("/user/**", () -> StpUtil.checkPermission("user"));
-//                    SaRouter.match("/admin/**", () -> StpUtil.checkPermission("admin"));
-//                    SaRouter.match("/goods/**", () -> StpUtil.checkPermission("goods"));
-//
-//                    // ...
-//                })
-//                // 异常处理方法：每次setAuth函数出现异常时进入
-//                .setError(e -> {
-//                    return SaResult.error(e.getMessage());
-//                })
-//                ;
-//    }
-//}
+package com.weiran.gateway.satoken;
+
+import cn.dev33.satoken.context.SaHolder;
+import cn.dev33.satoken.reactor.filter.SaReactorFilter;
+import cn.dev33.satoken.router.SaRouter;
+import com.weiran.gateway.AjaxJson;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * 利用全局过滤器来处理跨域问题
+ */
+@Configuration
+public class SaTokenConfigure {
+
+    /**
+     * 注册 [sa-token全局过滤器]
+     */
+    @Bean
+    public SaReactorFilter getSaReactorFilter() {
+        return new SaReactorFilter()
+                .addInclude("/**").addExclude("/favicon.ico")
+                .setAuth(r -> {
+                    // System.out.println("---------- sa全局认证");
+                })
+                .setError(e -> {
+                    // System.out.println("---------- sa全局异常 ");
+                    return AjaxJson.getError(e.getMessage());
+                })
+                // 前置函数：在每次认证函数之前执行
+                .setBeforeAuth(r -> {
+                    // ---------- 设置跨域响应头 ----------
+                    SaHolder.getResponse()
+                            // 允许指定域访问跨域资源
+                            .setHeader("Access-Control-Allow-Origin", "*")
+                            // 允许所有请求方式
+                            .setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE")
+                            // 有效时间
+                            .setHeader("Access-Control-Max-Age", "3600")
+                            // 允许的header参数
+                            .setHeader("Access-Control-Allow-Headers", "x-requested-with,satoken");
+
+                    // 如果是预检请求，直接返回
+                    if ("OPTIONS".equals(SaHolder.getRequest().getMethod())) {
+                        System.out.println("=======================浏览器发来了OPTIONS预检请求==========");
+                        SaRouter.back();
+                    }
+                })
+                ;
+    }
+
+}
+

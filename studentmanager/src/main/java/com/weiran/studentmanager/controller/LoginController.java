@@ -99,7 +99,7 @@ public class LoginController {
     /**
      *  查询登录状态，浏览器访问
      */
-    @RequestMapping("/isLogin")
+    @RequestMapping("/isOrLogin")
     @ResponseBody
     public String isLogin() {
         return "当前会话是否登录：" + StpUtil.isLogin();

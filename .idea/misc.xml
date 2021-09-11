@@ -11,9 +11,16 @@
         <option value="$PROJECT_DIR$/missionplanning/missionplanning-api/pom.xml" />
         <option value="$PROJECT_DIR$/missionplanning/missionplanning-biz/pom.xml" />
         <option value="$PROJECT_DIR$/missionplanning/missionplanning-dal/pom.xml" />
-        <option value="$PROJECT_DIR$/weiran-txserver/pom.xml" />
         <option value="$PROJECT_DIR$/weiran-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/weiran-txserver/pom.xml" />
+        <option value="$PROJECT_DIR$/weiran-ssodemo/pom.xml" />
+        <option value="$PROJECT_DIR$/weiran-sso/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

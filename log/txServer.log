@@ -1,0 +1,102 @@
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/sunweiran/nacos/config
+--------------> 2021-09-11 08:26:11 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-tx-lcn] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 08:26:11 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[jouav-cloud-tx-lcn.properties] & group[DEFAULT_GROUP]
+--------------> 2021-09-11 08:26:11 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+--------------> 2021-09-11 08:26:11 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-tx-lcn-weiran.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-tx-lcn.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-jouav-cloud-tx-lcn,DEFAULT_GROUP'}]
+--------------> 2021-09-11 08:26:11 [main] INFO  c.w.txserver.TxserverApplication - The following profiles are active: weiran
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 1 JPA repository interfaces.
+--------------> 2021-09-11 08:26:12 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.codingapi.txlcn.tm, com.weiran.txserver]' package. Please check your configuration.
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.codingapi.txlcn.tm.support.db.jpa.TxExceptionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+--------------> 2021-09-11 08:26:12 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+--------------> 2021-09-11 08:26:12 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.codingapi.txlcn.tm, com.weiran.txserver]' package. Please check your configuration.
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7efb58b7-e763-377b-8288-3a995ca1c045
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8904 (http)
+--------------> 2021-09-11 08:26:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8904"]
+--------------> 2021-09-11 08:26:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-09-11 08:26:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-09-11 08:26:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-09-11 08:26:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1111 ms
+--------------> 2021-09-11 08:26:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+--------------> 2021-09-11 08:26:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.20.Final
+--------------> 2021-09-11 08:26:13 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+--------------> 2021-09-11 08:26:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+--------------> 2021-09-11 08:26:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+--------------> 2021-09-11 08:26:14 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+--------------> 2021-09-11 08:26:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+--------------> 2021-09-11 08:26:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+--------------> 2021-09-11 08:26:15 [main] INFO  c.c.txlcn.logger.db.LogDbHelper - log-db Properties: {"allowPoolSuspension":false,"autoCommit":true,"connectionTimeout":30000,"dataSourceProperties":{},"driverClassName":"com.mysql.cj.jdbc.Driver","enabled":true,"healthCheckProperties":{},"idleTimeout":600000,"initializationFailTimeout":1,"isolateInternalQueries":false,"jdbcUrl":"jdbc:mysql://121.36.73.16:3306/jouavcloud_txserver?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai","leakDetectionThreshold":0,"maxLifetime":1800000,"maximumPoolSize":-1,"minimumIdle":-1,"onlyError":true,"password":"Jouav1234","readOnly":false,"registerMbeans":false,"username":"root","validationTimeout":5000}
+--------------> 2021-09-11 08:26:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+--------------> 2021-09-11 08:26:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+--------------> 2021-09-11 08:26:15 [main] INFO  c.c.txlcn.logger.db.LogDbHelper - log-db prepared.
+--------------> 2021-09-11 08:26:15 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 08:26:15 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 08:26:15 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+--------------> 2021-09-11 08:26:15 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+--------------> 2021-09-11 08:26:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+--------------> 2021-09-11 08:26:15 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 08:26:15 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 08:26:15 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+--------------> 2021-09-11 08:26:15 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+--------------> 2021-09-11 08:26:16 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+--------------> 2021-09-11 08:26:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8904"]
+--------------> 2021-09-11 08:26:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8904 (http) with context path ''
+--------------> 2021-09-11 08:26:16 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=8904, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@jouav-cloud-tx-lcn', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+--------------> 2021-09-11 08:26:16 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] jouav-weiran registering service DEFAULT_GROUP@@jouav-cloud-tx-lcn with instance: Instance{instanceId='null', ip='192.168.1.4', port=8904, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+--------------> 2021-09-11 08:26:16 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP jouav-cloud-tx-lcn 192.168.1.4:8904 register finished
+--------------> 2021-09-11 08:26:16 [main] INFO  c.w.txserver.TxserverApplication - Started TxserverApplication in 6.136 seconds (JVM running for 6.592)
+--------------> 2021-09-11 08:26:16 [main] INFO  c.c.t.t.n.i.NettyRpcServerInitializer - Socket started on 0.0.0.0:8207 
+--------------> 2021-09-11 08:26:16 [nioEventLoopGroup-4-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x2e291883] REGISTERED
+--------------> 2021-09-11 08:26:16 [nioEventLoopGroup-4-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x2e291883] BIND: /0.0.0.0:8207
+--------------> 2021-09-11 08:26:16 [nioEventLoopGroup-4-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x2e291883, L:/0:0:0:0:0:0:0:0:8207] ACTIVE
+--------------> 2021-09-11 08:26:16 [main] INFO  c.c.t.t.s.s.impl.ManagerServiceImpl - Acquired machine id 11, max machine id is: 2251799813685246
+--------------> 2021-09-11 08:26:16 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-tx-lcn.properties+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 08:26:16 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-tx-lcn.properties, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 08:26:16 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-tx-lcn-weiran.properties+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 08:26:16 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-tx-lcn-weiran.properties, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 08:26:16 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-121.36.18.64_8888-jouav-weiran] [subscribe] jouav-cloud-tx-lcn+DEFAULT_GROUP+jouav-weiran
+--------------> 2021-09-11 08:26:16 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-121.36.18.64_8888-jouav-weiran] [add-listener] ok, tenant=jouav-weiran, dataId=jouav-cloud-tx-lcn, group=DEFAULT_GROUP, cnt=1
+--------------> 2021-09-11 08:26:17 [RMI TCP Connection(3)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-09-11 08:26:17 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-09-11 08:26:17 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+--------------> 2021-09-11 08:26:17 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@jouav-cloud-tx-lcn@@DEFAULT -> [{"instanceId":"192.168.1.4#8904#DEFAULT#DEFAULT_GROUP@@jouav-cloud-tx-lcn","ip":"192.168.1.4","port":8904,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-tx-lcn","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 08:26:17 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@jouav-cloud-tx-lcn@@DEFAULT -> [{"instanceId":"192.168.1.4#8904#DEFAULT#DEFAULT_GROUP@@jouav-cloud-tx-lcn","ip":"192.168.1.4","port":8904,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@jouav-cloud-tx-lcn","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+--------------> 2021-09-11 08:27:12 [Thread-23] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+--------------> 2021-09-11 08:27:12 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+--------------> 2021-09-11 08:27:12 [Thread-23] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+--------------> 2021-09-11 08:27:12 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@jouav-cloud-tx-lcn:192.168.1.4:8904 from beat map.
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] jouav-weiran deregistering service DEFAULT_GROUP@@jouav-cloud-tx-lcn with instance: Instance{instanceId='null', ip='192.168.1.4', port=8904, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+--------------> 2021-09-11 08:27:12 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+--------------> 2021-09-11 08:27:15 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] DEBUG c.c.t.t.c.storage.redis.RedisStorage - removed TM 0.0.0.0:8207
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'nettyRpcClientInitializer': java.lang.NullPointerException
+--------------> 2021-09-11 08:27:18 [nioEventLoopGroup-4-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x2e291883, L:/0:0:0:0:0:0:0:0:8207] INACTIVE
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  c.c.t.t.n.i.NettyRpcServerInitializer - server was down.
+--------------> 2021-09-11 08:27:18 [nioEventLoopGroup-4-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x2e291883, L:/0:0:0:0:0:0:0:0:8207] UNREGISTERED
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  c.c.txlcn.logger.db.LogDbHelper - log hikariDataSource close.
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+--------------> 2021-09-11 08:27:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

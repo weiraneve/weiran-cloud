@@ -1,11 +1,8 @@
 # 端口
 server:
-  port: 8080
+  port: 8082
 
 spring:
-  main:
-    # 一个启动时候的覆盖bug
-    allow-bean-definition-overriding: true
   profiles:
     active: weiran
   datasource:
@@ -13,8 +10,6 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/test?setUnicode=true&characterEncoding=utf8&useAffectedRows=true
     username: root
     password: sun8100512
-  thymeleaf:
-    cache: false
   # redis Sa-token的框架集成，只需要引入maven依赖就可以了
   redis:
     # Redis数据库索引（默认为0）
@@ -53,24 +48,7 @@ tx-lcn:
   logger:
     enabled: false
 
-# sa-token配置
-sa-token:
-  # SSO-相关配置
-  sso:
-    # SSO-Server端 统一认证地址
-    auth-url: http://127.0.0.1:8081/sso/auth
-    # 是否打开单点注销接口
-    is-slo: true
-  # 配置Sa-Token单独使用的Redis连接 （此处需要和SSO-Server端连接同一个Redis）
-  alone-redis:
-    # Redis数据库索引 (默认为0)
-    database: 0
-    # Redis服务器地址
-    host: 127.0.0.1
-    # Redis服务器连接端口
-    port: 6379
-    # Redis服务器连接密码（默认为空）
-    password: 123456
+
 
 mybatis-plus:
   configuration:
@@ -89,13 +67,13 @@ mybatis-plus:
 
 #日志配置文件
 logging:
- config: classpath:logback.xml
+  config: classpath:logback.xml
 
- swagger:
-   production: false
-   basic:
-     enable: true
-     username: weiran
-     password: weiran1234
+  swagger:
+    production: false
+    basic:
+      enable: true
+      username: weiran
+      password: weiran1234
 
 

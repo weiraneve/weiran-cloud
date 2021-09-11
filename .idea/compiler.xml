@@ -10,14 +10,18 @@
         <module name="weiran-common" />
         <module name="weiran-gateway" />
         <module name="missionplanning-api" />
+        <module name="weiran-sso" />
         <module name="missionplanning-dal" />
         <module name="studentmanager" />
+        <module name="weiran-oauth2" />
         <module name="weiran-txserver" />
         <module name="missionplanning-biz" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mission" target="1.8" />
+      <module name="untitled" target="8" />
+      <module name="weiran-uaa" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -29,7 +33,10 @@
       <module name="studentmanager" options="-parameters" />
       <module name="weiran-common" options="-parameters" />
       <module name="weiran-gateway" options="-parameters" />
+      <module name="weiran-oauth2" options="-parameters" />
+      <module name="weiran-sso" options="-parameters" />
       <module name="weiran-txserver" options="-parameters" />
+      <module name="weiran-uaa" options="-parameters" />
     </option>
   </component>
 </project>

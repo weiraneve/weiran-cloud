@@ -1,0 +1,11 @@
+--------------> 2021-09-10 17:46:30 [main] ERROR c.b.m.g.e.AbstractTemplateEngine - 无法创建文件，请检查配置信息！
+java.io.FileNotFoundException: /Users/sunweiran/Downloads/weiran-cloud/weiran-sso/src/main/java/com/weiran/sso/model/PermissionDO.java (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine.writer(FreemarkerTemplateEngine.java:51)
+	at com.baomidou.mybatisplus.generator.engine.AbstractTemplateEngine.writerFile(AbstractTemplateEngine.java:137)
+	at com.baomidou.mybatisplus.generator.engine.AbstractTemplateEngine.batchOutput(AbstractTemplateEngine.java:81)
+	at com.baomidou.mybatisplus.generator.AutoGenerator.execute(AutoGenerator.java:106)
+	at com.weiran.sso.mybatisplus.CodeGenerator.main(CodeGenerator.java:207)
