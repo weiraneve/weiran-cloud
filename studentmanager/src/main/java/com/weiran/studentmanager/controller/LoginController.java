@@ -27,6 +27,15 @@ public class LoginController {
     private UserManager userManager;
 
     /**
+     * 网关统一鉴权后的页面
+     */
+    @RequestMapping("/gatewayTest")
+    public String getGat() {
+        return "/gatewayTest";
+    }
+
+
+    /**
      * 鉴权后的主页面
      */
     @RequestMapping("/main")
@@ -91,9 +100,12 @@ public class LoginController {
      * @description 登出
      */
     @RequestMapping("/logout")
-    public String logout() {
-        StpUtil.logout(); // 会话注销
-        return "login";
+    @ResponseBody
+    public AjaxResult logout() {
+        AjaxResult ajaxResult = new AjaxResult();
+        ajaxResult.setMessage("会话已经注销");
+        StpUtil.logout();
+        return ajaxResult;
     }
 
     /**

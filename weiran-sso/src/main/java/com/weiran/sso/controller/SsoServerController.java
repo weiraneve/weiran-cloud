@@ -9,7 +9,6 @@ import cn.dev33.satoken.util.SaResult;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.weiran.sso.manager.UserManager;
 import com.weiran.sso.model.UserDO;
-import org.apache.catalina.Wrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,17 +22,43 @@ public class SsoServerController {
     @Autowired
     private UserManager userManager;
 
-    /*
-     * SSO-Server端：处理所有SSO相关请求
-     *         http://{host}:{port}/sso/auth           -- 单点登录授权地址，接受参数：redirect=授权重定向地址
-     *         http://{host}:{port}/sso/doLogin        -- 账号密码登录接口，接受参数：name、pwd
-     *         http://{host}:{port}/sso/checkTicket    -- Ticket校验接口（isHttp=true时打开），接受参数：ticket=ticket码、ssoLogoutCall=单点注销回调地址 [可选]
-     *         http://{host}:{port}/sso/logout         -- 单点注销地址（isSlo=true时打开），接受参数：loginId=账号id、secretkey=接口调用秘钥
-     */
-    @RequestMapping("/sso/*")
-    public Object ssoRequest() {
-        return SaSsoHandle.serverRequest();
-    }
+//    /**
+//     * SSO-Server端：处理所有SSO相关请求
+//     *         http://{host}:{port}/sso/auth           -- 单点登录授权地址，接受参数：redirect=授权重定向地址
+//     *         http://{host}:{port}/sso/doLogin        -- 账号密码登录接口，接受参数：name、pwd
+//     *         http://{host}:{port}/sso/checkTicket    -- Ticket校验接口（isHttp=true时打开），接受参数：ticket=ticket码、ssoLogoutCall=单点注销回调地址 [可选]
+//     *         http://{host}:{port}/sso/logout         -- 单点注销地址（isSlo=true时打开），接受参数：loginId=账号id、secretkey=接口调用秘钥
+//     *         聚合式路由
+//     */
+//    @RequestMapping("/sso/*")
+//    public Object ssoRequest() {
+//        return SaSsoHandle.serverRequest();
+//    }
+
+        // 拆分式路由
+        // SSO-Server：统一认证地址
+        @RequestMapping("/sso/auth")
+        public Object ssoAuth() {
+            return SaSsoHandle.ssoAuth();
+        }
+
+        // SSO-Server：RestAPI 登录接口
+        @RequestMapping("/sso/doLogin")
+        public Object ssoDoLogin() {
+            return SaSsoHandle.ssoDoLogin();
+        }
+
+        // SSO-Server：校验ticket 获取账号id
+        @RequestMapping("/sso/checkTicket")
+        public Object ssoCheckTicket() {
+            return SaSsoHandle.ssoCheckTicket();
+        }
+
+        // SSO-Server：单点注销
+        @RequestMapping("/sso/logout")
+        public Object ssoLogout() {
+            return SaSsoHandle.ssoServerLogout();
+        }
 
     // 配置SSO相关参数
     @Autowired

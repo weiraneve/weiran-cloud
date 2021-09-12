@@ -1,6 +1,6 @@
 spring:
   main:
-    # 一个启动时候的覆盖bug
+    # Bean同名注册出现的bug，true则是覆盖同名注册的Bean
     allow-bean-definition-overriding: true
   profiles:
     active: weiran

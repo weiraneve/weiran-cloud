@@ -3,28 +3,36 @@ package com.weiran.gateway.satoken;
 import cn.dev33.satoken.context.SaHolder;
 import cn.dev33.satoken.reactor.filter.SaReactorFilter;
 import cn.dev33.satoken.router.SaRouter;
-import com.weiran.gateway.AjaxJson;
+import cn.dev33.satoken.stp.StpUtil;
+import com.weiran.gateway.util.AjaxJson;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 利用全局过滤器来处理跨域问题
+ * 网关利用全局过滤器来处理跨域问题
  */
 @Configuration
 public class SaTokenConfigure {
 
     /**
      * 注册 [sa-token全局过滤器]
+     * 网关统一鉴权
      */
     @Bean
     public SaReactorFilter getSaReactorFilter() {
         return new SaReactorFilter()
-                .addInclude("/**").addExclude("/favicon.ico")
+                .addInclude("/**")
+                .addExclude("/favicon.ico", "/studentmanager/logout", "/studentmanager/isOrLogin")
                 .setAuth(r -> {
-                    // System.out.println("---------- sa全局认证");
+                     System.out.println("---------- 网关全局认证");
+                    // 登录验证 -- 拦截所有路由，并排除登陆接口 用于开放登录
+                    SaRouter.match("/**", "/studentmanager/login", () -> StpUtil.checkLogin());
+                    // 权限认证 -- 不同模块, 校验不同权限
+                    SaRouter.match("/studentmanager/gatewayTest", () -> StpUtil.checkPermissionOr("test", "student"));
+
                 })
                 .setError(e -> {
-                    // System.out.println("---------- sa全局异常 ");
+                     System.out.println("---------- 网关全局异常 ");
                     return AjaxJson.getError(e.getMessage());
                 })
                 // 前置函数：在每次认证函数之前执行

@@ -4,7 +4,7 @@ server:
 
 spring:
   main:
-    # 一个启动时候的覆盖bug
+    # Bean同名注册出现的bug，true则是覆盖同名注册的Bean
     allow-bean-definition-overriding: true
   profiles:
     active: weiran
@@ -55,22 +55,20 @@ tx-lcn:
 
 # sa-token配置
 sa-token:
-  # SSO-相关配置
-  sso:
-    # SSO-Server端 统一认证地址
-    auth-url: http://127.0.0.1:8081/sso/auth
-    # 是否打开单点注销接口
-    is-slo: true
-  # 配置Sa-Token单独使用的Redis连接 （此处需要和SSO-Server端连接同一个Redis）
-  alone-redis:
-    # Redis数据库索引 (默认为0)
-    database: 0
-    # Redis服务器地址
-    host: 127.0.0.1
-    # Redis服务器连接端口
-    port: 6379
-    # Redis服务器连接密码（默认为空）
-    password: 123456
+  # token名称 (同时也是cookie名称)
+  token-name: satoken
+  # token有效期，单位s 默认30天, -1代表永不过期
+  timeout: 60
+  # token临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+  activity-timeout: 60
+  # 是否允许同一账号并发登录 (为true时允许一起登录, 为false时新登录挤掉旧登录)
+  is-concurrent: true
+  # 在多人登录同一账号时，是否共用一个token (为true时所有登录共用一个token, 为false时每次登录新建一个token)
+  is-share: true
+  # token风格
+  token-style: uuid
+  # 是否输出操作日志
+  is-log: false
 
 mybatis-plus:
   configuration:
@@ -89,13 +87,13 @@ mybatis-plus:
 
 #日志配置文件
 logging:
- config: classpath:logback.xml
+  config: classpath:logback.xml
 
- swagger:
-   production: false
-   basic:
-     enable: true
-     username: weiran
-     password: weiran1234
+  swagger:
+    production: false
+    basic:
+      enable: true
+      username: weiran
+      password: weiran1234
 
 

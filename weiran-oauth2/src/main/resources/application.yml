@@ -2,6 +2,17 @@
 server:
   port: 8082
 
+# sa-token配置
+sa-token:
+  # token名称 (同时也是cookie名称)
+  token-name: satoken-server
+  # OAuth2.0 配置
+  oauth2:
+    is-code: true
+    is-implicit: true
+    is-password: true
+    is-client: true
+
 spring:
   profiles:
     active: weiran
@@ -47,8 +58,6 @@ tx-lcn:
   #是否开启日志记录。当开启以后需要配置对应logger的数据库连接配置信息。
   logger:
     enabled: false
-
-
 
 mybatis-plus:
   configuration:

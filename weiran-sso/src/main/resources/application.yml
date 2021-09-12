@@ -50,12 +50,26 @@ tx-lcn:
 
 # Sa-Token配置
 sa-token:
+  token-name: satoken-sso
+  # token有效期，单位s 默认30天, -1代表永不过期
+  timeout: 60
+  # token临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+  activity-timeout: 60
   # SSO-相关配置
   sso:
     # Ticket有效期 (单位: 秒)，默认五分钟
-    ticket-timeout: 300
+    ticket-timeout: 60
     # 所有允许的授权回调地址 （此处为了方便测试配置为*，线上生产环境一定要配置为详细地地址）
     allow-url: "*"
+#  alone-redis:
+#    # Redis数据库索引 (默认为0)
+#    database: 1
+#    # Redis服务器地址
+#    host: 127.0.0.1
+#    # Redis服务器连接端口
+#    port: 6379
+#    # Redis服务器连接密码（默认为空）
+#    password: 123456
 
 mybatis-plus:
   configuration:

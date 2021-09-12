@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/weiran-txserver/pom.xml" />
         <option value="$PROJECT_DIR$/weiran-ssodemo/pom.xml" />
         <option value="$PROJECT_DIR$/weiran-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/weiran-sso-A/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

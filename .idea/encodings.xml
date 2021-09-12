@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/weiran-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiran-oauth2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiran-sso/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiran-sso_A/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiran-txserver/src/main/java" charset="UTF-8" />
   </component>
 </project>

@@ -12,6 +12,7 @@
         <module>weiran-gateway</module>
         <module>weiran-oauth2</module>
         <module>weiran-sso</module>
+        <module>weiran-sso_A</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>
