@@ -13,6 +13,7 @@
         <module>weiran-oauth2</module>
         <module>weiran-sso</module>
         <module>weiran-sso_A</module>
+        <module>weiran-oauth2-A</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>
@@ -34,6 +35,7 @@
         <saToken.version>1.26.0</saToken.version>
         <spring.cloud-version>Hoxton.SR8</spring.cloud-version>
         <spring.cloud-alibaba>2.2.5.RELEASE</spring.cloud-alibaba>
+        <mybatisPlus-version>3.4.1</mybatisPlus-version>
     </properties>
 
     <dependencies>
@@ -49,17 +51,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <!-- mybatis plus 代码生成器 -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.4.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.1</version>
         </dependency>
 <!--  在微服务架构中使用Sa-Token时，网关和内部服务要分开引入Sa-Token依赖（不要直接在顶级父pom中引入Sa-Token）-->
         <!-- fastjson格式转换 -->
@@ -79,12 +70,6 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>4.5.15</version>
-        </dependency>
-        <!--MYSQL连接器-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
         </dependency>
         <!-- reids -->
         <dependency>
@@ -149,7 +134,17 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <!-- mybatis plus 代码生成器 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatisPlus-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatisPlus-version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>

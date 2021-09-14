@@ -15,4 +15,8 @@
 - Mac的IDEA有可能有那模块依赖添加问题，解决办法就是，删除有问题的模块重新生成
 - 过滤器尽量不要有重复的地方，以免顺序上执行有误，但似乎网关的统一鉴权与登陆和子模块冲突不大
 - 我的理解里，这个saToken框架里的SSO应用，只需要在认证中心server里登陆，其他回调配置好，不需要自己调ticket和back，直接登陆就是
+- 有时候一些bug查询资料下来，最终发现无非就是删除pom依赖或者添加一些pom依赖
+- Mac IDEA 里maven子模块建立后，似乎要在pom文件里把dependencies标签配置一下，哪怕是为空，也可，否则子模块依赖库配置不了，以及application配置文件需要在project structure的facets中添加spring，bootstrap
+文件应该是需要替添加那个依赖，可解决
+- 很多bug都是依赖冲突，或者修改pom文件后IDEA没有立即反馈更改的问题
 - 

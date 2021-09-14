@@ -10,6 +10,7 @@
         <module name="weiran-common" />
         <module name="weiran-gateway" />
         <module name="weiran-sso_A" />
+        <module name="weiran-oauth2-A" />
         <module name="missionplanning-api" />
         <module name="weiran-sso" />
         <module name="missionplanning-dal" />
@@ -36,6 +37,7 @@
       <module name="weiran-common" options="-parameters" />
       <module name="weiran-gateway" options="-parameters" />
       <module name="weiran-oauth2" options="-parameters" />
+      <module name="weiran-oauth2-A" options="-parameters" />
       <module name="weiran-sso" options="-parameters" />
       <module name="weiran-sso_A" options="-parameters" />
       <module name="weiran-txserver" options="-parameters" />

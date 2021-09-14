@@ -12,6 +12,16 @@
     <artifactId>weiran-oauth2</artifactId>
 
     <dependencies>
+        <!-- Sa-Token 整合 Redis-使用jackson序列化方式 (Redis包是必须的，因为我们需要和各个服务通过Redis来同步数据) -->
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-dao-redis-jackson</artifactId>
+            <version>1.26.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
         <!--需要引入该jar才能使bootstrap配置文件生效-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -21,18 +31,12 @@
         <dependency>
             <groupId>cn.dev33</groupId>
             <artifactId>sa-token-spring-boot-starter</artifactId>
-            <version>1.26.0</version>
         </dependency>
         <!-- Sa-Token-OAuth2.0 模块 -->
         <dependency>
             <groupId>cn.dev33</groupId>
             <artifactId>sa-token-oauth2</artifactId>
             <version>1.26.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.3.9</version>
         </dependency>
     </dependencies>
 
