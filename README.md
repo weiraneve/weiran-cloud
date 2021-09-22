@@ -1,7 +1,8 @@
 ## 拥有的技术栈与功能：
 - 鉴权框架SaToken
 - 完成SSO、OAuth2、网关统一鉴权等登录与权限功能。
-- 分布式事务框架-TX-LCN、网关-SpringCloud Gateway、服务注册与发现-Nacos、持久层-MyBatisPlus、
+- 分布式事务框架-TX-LCN、网关-SpringCloud Gateway、服务注册与发现-Nacos、持久层-MyBatisPlus、MQTT-RabbitMq即时通信
+、
 
 ## 出现的疑难杂症
 - satoken依赖引入时，网关要和内部服务分开，不要直接在父级pom引入Sa-Token,sa-token-spring-boot-starter 和 sa-token-reactor-spring-boot-starter，格子选择一个，一个对应Servlet模型比如Zuul，一个对应Reactor模型，如SpringCloud Gateway，切不可直接在一个项目里同时引入这两个依赖，否则会造成项目无法启动，并且要映入redis集成包，实现网关与子服务通过Redis来同步数据
@@ -23,3 +24,4 @@
 文件应该是需要替添加那个依赖，可解决
 - 很多bug都是依赖冲突，或者修改pom文件后IDEA没有立即反馈更改的问题
 - 如果模块没有启动类，那么spring-Applictaion-yml配置文件无法加入facets
+- 因为common模块里有redis相关的代码，所以每一个引用common模块的子模块都需要配置redis属性或者上nacos

@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "86fbdc67-504c-419b-9be9-0729d219153e",
+		"name": "cloud测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "stu模块登陆",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8901/studentmanager/login?username=sun&password=123",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8901",
+					"path": [
+						"studentmanager",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "sun"
+						},
+						{
+							"key": "password",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mission模块测试",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8901/mission/v1/mission/info",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8901",
+					"path": [
+						"mission",
+						"v1",
+						"mission",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "---------------------------------",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "SSOclient测试是否登陆",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8083/isOrLogin",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8083",
+					"path": [
+						"isOrLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SSOclient权限主页面",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8083/main",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8083",
+					"path": [
+						"main"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SSOserver登陆",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/sso/doLogin?name=sa&pwd=123",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"sso",
+						"doLogin"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "sa"
+						},
+						{
+							"key": "pwd",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "---------------------------------",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "网关-stu模块的登陆",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8901/studentmanager/login?username=sun&password=123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8901",
+					"path": [
+						"studentmanager",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "sun"
+						},
+						{
+							"key": "password",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "网关-stu模块的页面权限",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8901/studentmanager/gatewayTest",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8901",
+					"path": [
+						"studentmanager",
+						"gatewayTest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "网关-stu-查询是否登陆",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8901/studentmanager/isOrLogin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8901",
+					"path": [
+						"studentmanager",
+						"isOrLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "网关-stu-注销",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8901/studentmanager/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8901",
+					"path": [
+						"studentmanager",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "---------------------------------",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Oauth2-server-密码模式",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8082/oauth2/token?grant_type=password&client_id=1001&username=sa&password=123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8082",
+					"path": [
+						"oauth2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "client_id",
+							"value": "1001"
+						},
+						{
+							"key": "username",
+							"value": "sa"
+						},
+						{
+							"key": "password",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Oauth2-server-授权码模式",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://sa-oauth-server.com:8001/oauth2/authorize?response_type=code&client_id=1001&redirect_uri=http://sa-token.dev33.cn&scope=userinfo",
+					"protocol": "http",
+					"host": [
+						"sa-oauth-server",
+						"com"
+					],
+					"port": "8001",
+					"path": [
+						"oauth2",
+						"authorize"
+					],
+					"query": [
+						{
+							"key": "response_type",
+							"value": "code",
+							"description": "返回类型，这里请填写：code"
+						},
+						{
+							"key": "client_id",
+							"value": "1001",
+							"description": "应用id"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://sa-token.dev33.cn",
+							"description": "用户确认授权后，重定向的url地址"
+						},
+						{
+							"key": "scope",
+							"value": "userinfo",
+							"description": "具体请求的权限，多个用逗号隔开"
+						},
+						{
+							"key": "state",
+							"value": null,
+							"description": "随机值，此参数会在重定向时追加到url末尾，不填不追加",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oauth2-client-密码模式",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8084/passwordLogin?username=sa&password=123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8084",
+					"path": [
+						"passwordLogin"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "sa"
+						},
+						{
+							"key": "password",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "---------------------------------",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "mqtt测试",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8088/mqtt/sendToDefaultTopic?payload=来自火星的消息",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8088",
+					"path": [
+						"mqtt",
+						"sendToDefaultTopic"
+					],
+					"query": [
+						{
+							"key": "payload",
+							"value": "来自火星的消息"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="weiran-common" />
         <module name="weiran-gateway" />
+        <module name="weiran-mqtt" />
         <module name="weiran-sso_A" />
         <module name="weiran-oauth2-A" />
         <module name="missionplanning-api" />
@@ -36,6 +37,7 @@
       <module name="studentmanager" options="-parameters" />
       <module name="weiran-common" options="-parameters" />
       <module name="weiran-gateway" options="-parameters" />
+      <module name="weiran-mqtt" options="-parameters" />
       <module name="weiran-oauth2" options="-parameters" />
       <module name="weiran-oauth2-A" options="-parameters" />
       <module name="weiran-sso" options="-parameters" />
