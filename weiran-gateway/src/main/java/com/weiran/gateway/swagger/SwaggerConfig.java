@@ -9,9 +9,6 @@ import springfox.documentation.swagger.web.UiConfigurationBuilder;
 
 /**
  * discription:
- *
- * @author luobin@jouav.com
- * @date 2021/3/3 0003 10:07
  */
 @Configuration
 public class SwaggerConfig {

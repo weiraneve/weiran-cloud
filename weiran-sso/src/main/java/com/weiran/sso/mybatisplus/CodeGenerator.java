@@ -57,7 +57,7 @@ public class CodeGenerator {
         dsc.setUrl("jdbc:mysql://localhost:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("sun8100512");
+        dsc.setPassword("123456");
         // 自定义数据库表字段类型转换【可选】
         dsc.setTypeConvert(new MySqlTypeConvert() {
             @Override

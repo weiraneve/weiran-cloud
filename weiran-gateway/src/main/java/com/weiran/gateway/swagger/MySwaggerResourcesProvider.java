@@ -15,9 +15,6 @@ import java.util.List;
 /**
  * discription: 整合配置接口文档
  * 通过遍历eureka路由方式自动添加所有微服务 API 文档，SwaggerResourcesProvider 是资源提供者，我们重写他，把各个微服务的API文档资源路径返回，注释部分为手动添加的方式
- *
- * @author luobin@jouav.com
- * @date 2021/3/3 0003 10:58
  */
 @Component
 @Primary

@@ -12,7 +12,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/test?setUnicode=true&characterEncoding=utf8&useAffectedRows=true
     username: root
-    password: sun8100512
+    password: 123456
   thymeleaf:
     cache: false
   # redis Sa-token的框架集成，只需要引入maven依赖就可以了

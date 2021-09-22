@@ -3,7 +3,7 @@ package com.weiran.gateway.model;
 import java.io.Serializable;
 
 /**
- * @author luobin
+ *
  */
 public class Msg<T> implements Serializable{
     private static final long serialVersionUID = -1177183613782210351L;
