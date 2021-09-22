@@ -1,0 +1,16 @@
+# 端口
+server:
+  port: 8088
+
+spring:
+  main:
+    banner-mode: 'OFF'
+  profiles:
+    active: weiran
+
+rabbitmq:
+  mqtt:
+    url: tcp://localhost:1883
+    username: weiran
+    password: weiran
+    defaultTopic: testTopic

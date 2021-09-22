@@ -14,6 +14,7 @@
         <module>weiran-sso</module>
         <module>weiran-sso_A</module>
         <module>weiran-oauth2-A</module>
+        <module>weiran-mqtt</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>

@@ -1,6 +1,9 @@
-# saToken 代替SpringSecurity
+## 拥有的技术栈与功能：
+- 鉴权框架SaToken
+- 完成SSO、OAuth2、网关统一鉴权等登录与权限功能。
+- 分布式事务框架-TX-LCN、网关-SpringCloud Gateway、服务注册与发现-Nacos、持久层-MyBatisPlus、
 
-# 出现的疑难杂症
+## 出现的疑难杂症
 - satoken依赖引入时，网关要和内部服务分开，不要直接在父级pom引入Sa-Token,sa-token-spring-boot-starter 和 sa-token-reactor-spring-boot-starter，格子选择一个，一个对应Servlet模型比如Zuul，一个对应Reactor模型，如SpringCloud Gateway，切不可直接在一个项目里同时引入这两个依赖，否则会造成项目无法启动，并且要映入redis集成包，实现网关与子服务通过Redis来同步数据
 - Nacos的依赖需要在自己的子模块pom中引入，否则即便配置文件无误，也注册不成功。
 - 经常有一些奇怪的bug，比如那个在配置文件中需要加一句覆盖的配置，那里是同名Bean需要覆盖
@@ -19,4 +22,4 @@
 - Mac IDEA 里maven子模块建立后，似乎要在pom文件里把dependencies标签配置一下，哪怕是为空，也可，否则子模块依赖库配置不了，以及application配置文件需要在project structure的facets中添加spring，bootstrap
 文件应该是需要替添加那个依赖，可解决
 - 很多bug都是依赖冲突，或者修改pom文件后IDEA没有立即反馈更改的问题
-- 
+- 如果模块没有启动类，那么spring-Applictaion-yml配置文件无法加入facets
