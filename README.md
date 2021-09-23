@@ -24,4 +24,8 @@
 文件应该是需要替添加那个依赖，可解决
 - 很多bug都是依赖冲突，或者修改pom文件后IDEA没有立即反馈更改的问题
 - 如果模块没有启动类，那么spring-Applictaion-yml配置文件无法加入facets
-- 因为common模块里有redis相关的代码，所以每一个引用common模块的子模块都需要配置redis属性或者上nacos
+- 需要格外注意每一个模块的mysql、redis等数据源和中间件的连接配置与依赖，特别父模块取消那些依赖后，子模块需要独自配置
+- 因为common模块里有redis相关的代码，所以每一个引用common模块的子模块都需要配置redis属性或者上nacos，以及虽然通过nacos配置过的，但数据库以及数据源用本地的，建议注释掉nacos相关配置代码
+- 依赖注入报错的sqlSessionFactory的BUG，通过pom文件里添加Mybaits数据库映射与mysql连接器解决。
+- 配置文件的Mysql时区问题
+- 

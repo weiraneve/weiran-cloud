@@ -12,6 +12,17 @@
     <artifactId>weiran-sso</artifactId>
 
     <dependencies>
+        <!--MYSQL连接器-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--Mybaits数据库映射-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.0</version>
+        </dependency>
         <!-- Sa-Token 权限认证, 在线文档：http://sa-token.dev33.cn/ -->
         <dependency>
             <groupId>cn.dev33</groupId>
@@ -49,6 +60,10 @@
             <artifactId>mybatis-plus-extension</artifactId>
             <version>3.3.2</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
         </dependency>
     </dependencies>
 

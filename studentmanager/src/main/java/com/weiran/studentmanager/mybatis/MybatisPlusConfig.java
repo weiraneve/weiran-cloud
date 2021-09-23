@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @MapperScan("com.weiran.studentmanager.mapper")
 public class MybatisPlusConfig {
 
+
     /**
      * @description 分页插件，配置后才会生效。
      */
