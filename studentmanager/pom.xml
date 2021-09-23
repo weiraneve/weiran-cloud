@@ -12,6 +12,12 @@
     <artifactId>studentmanager</artifactId>
 
     <dependencies>
+        <!--Hutool工具类-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.4.0</version>
+        </dependency>
         <!--Elastic Agent相关依赖-->
         <dependency>
             <groupId>co.elastic.apm</groupId>
