@@ -1,4 +1,6 @@
 ## 拥有的技术栈与功能：
+一些自己玩的Demo，贻笑大方
+
 - 鉴权框架SaToken
 - 完成SSO、OAuth2、网关统一鉴权等登录与权限功能。
 - 分布式事务框架-TX-LCN、网关-SpringCloud Gateway、服务注册与发现-Nacos、持久层-MyBatisPlus、MQTT-RabbitMq即时通信
@@ -28,4 +30,4 @@
 - 因为common模块里有redis相关的代码，所以每一个引用common模块的子模块都需要配置redis属性或者上nacos，以及虽然通过nacos配置过的，但数据库以及数据源用本地的，建议注释掉nacos相关配置代码
 - 依赖注入报错的sqlSessionFactory的BUG，通过pom文件里添加Mybaits数据库映射与mysql连接器解决。
 - 配置文件的Mysql时区问题
-- 
+- MP框架中，依赖mybatis-plus-boot-starter对应，mybatis-plus依赖包则是mybatis.mapper-locations，否则会有映射失败的bug

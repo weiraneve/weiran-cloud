@@ -5,9 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>missionplanning</module>
         <module>weiran-common</module>
-        <module>studentmanager</module>
         <module>weiran-txserver</module>
         <module>weiran-gateway</module>
         <module>weiran-oauth2</module>
@@ -15,6 +13,8 @@
         <module>weiran-sso_A</module>
         <module>weiran-oauth2-A</module>
         <module>weiran-mqtt</module>
+        <module>weiran-stu</module>
+        <module>weiran-mission</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>
