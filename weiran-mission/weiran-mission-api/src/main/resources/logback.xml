@@ -22,10 +22,10 @@
 
     <!--输出到文件-->
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${log.path}/missionplanning.log</file>
+        <file>${log.path}/weiran-mission.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--按每分钟保存日志 修改格式可以按小时、按天、月来保存-->
-            <fileNamePattern>${log.path}/missionplanning-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>${log.path}/weiran-mission-%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
             <totalSizeCap>1GB</totalSizeCap>
         </rollingPolicy>
