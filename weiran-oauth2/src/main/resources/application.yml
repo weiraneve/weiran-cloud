@@ -10,7 +10,7 @@ sa-token:
   oauth2:
     is-code: true
     is-implicit: true
-    is-password: true
+    is-password: nacos true
     is-client: true
 
 spring:
@@ -83,6 +83,6 @@ logging:
     basic:
       enable: true
       username: weiran
-      password: weiran1234
+      password: nacos
 
 

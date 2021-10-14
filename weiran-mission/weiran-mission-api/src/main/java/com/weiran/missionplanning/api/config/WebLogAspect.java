@@ -27,7 +27,7 @@
 //    private ThreadLocal<Long> startTime=new ThreadLocal<>();
 //
 //    //
-//    @Pointcut("execution(public * com.weiran.jouavcloudmissionplanning.api.controller..*.*(..))")
+//    @Pointcut("execution(public * com.weiran.weirancloudmissionplanning.api.controller..*.*(..))")
 //    public void webLog(){
 //
 //    }

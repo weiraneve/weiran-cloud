@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: jouav-cloud-mission-planning
+    name: weiran-cloud-mission-planning
   cloud:
     inetutils:
       preferred-networks:
@@ -11,16 +11,16 @@ spring:
     nacos:
       discovery:
         server-addr: 121.36.18.64:8888 #服务注册中心地址
-        namespace: jouav-weiran
+        namespace:
         username: nacos
-        password: Jouav1234
+        password: nacos
       #        ip: 119.3.189.81 #服务所在服务器ip（一般线上服务器使用此配置）
       config:
         server-addr: 121.36.18.64:8888 #配置中心地址
         file-extension: yaml #指定yaml格式的配置
-        namespace: jouav-weiran
+        namespace:
         username: nacos
-        password: Jouav1234
+        password: nacos
 
 
 management:

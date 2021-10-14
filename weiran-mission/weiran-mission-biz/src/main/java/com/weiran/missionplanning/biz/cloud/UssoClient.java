@@ -9,7 +9,7 @@
 ///**
 // * discription:
 // */
-//@FeignClient(value = "jouav-cloud-uaa", fallback = UssoClientFallback.class, configuration = FeignConfiger.class)
+//@FeignClient(value = "weiran-cloud-uaa", fallback = UssoClientFallback.class, configuration = FeignConfiger.class)
 //public interface UssoClient {
 //
 //

@@ -6,8 +6,25 @@ spring:
   main:
     # Bean同名注册出现的bug，true则是覆盖同名注册的Bean
     allow-bean-definition-overriding: true
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 0.1 #设置Sleuth的抽样收集概率
   profiles:
     active: weiran
+  application:
+    name: weiran-stu
+  boot:
+    admin:
+      client:
+        url: http://localhost:9301 #配置admin-server地址
+        instance:
+          name: weiran
+          metadata:
+            username: sun
+            password: 123 #配置不对,暂时只能在satoken过滤器那放开actuator路径
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/auth?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false
@@ -74,15 +91,27 @@ sa-token:
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
 
-#日志配置文件
 logging:
   config: classpath:logback.xml
 
-  swagger:
-    production: false
-    basic:
-      enable: true
-      username: weiran
-      password: weiran1234
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+#logging:
+#  file:
+#    name: admin-client.log #添加开启admin的日志监控
+
+swagger:
+  production: false
+  basic:
+    enable: true
+    username: weiran
+    password: weiran1234
 
 

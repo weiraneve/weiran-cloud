@@ -4,7 +4,7 @@
 - 鉴权框架SaToken
 - 完成SSO、OAuth2、网关统一鉴权等登录与权限功能。
 - 分布式事务框架-TX-LCN、网关-SpringCloud Gateway、服务注册与发现-Nacos、持久层-MyBatisPlus、MQTT-RabbitMq即时通信
-、
+、Elastic Apm监控、Sleuth + Zipkin分布式链路追踪、SpringBoot Admin监控
 
 ## 出现的疑难杂症
 - satoken依赖引入时，网关要和内部服务分开，不要直接在父级pom引入Sa-Token,sa-token-spring-boot-starter 和 sa-token-reactor-spring-boot-starter，格子选择一个，一个对应Servlet模型比如Zuul，一个对应Reactor模型，如SpringCloud Gateway，切不可直接在一个项目里同时引入这两个依赖，否则会造成项目无法启动，并且要映入redis集成包，实现网关与子服务通过Redis来同步数据
@@ -30,4 +30,6 @@
 - 因为common模块里有redis相关的代码，所以每一个引用common模块的子模块都需要配置redis属性或者上nacos，以及虽然通过nacos配置过的，但数据库以及数据源用本地的，建议注释掉nacos相关配置代码
 - 依赖注入报错的sqlSessionFactory的BUG，通过pom文件里添加Mybaits数据库映射与mysql连接器解决。
 - 配置文件的Mysql时区问题
-- MP框架中，依赖mybatis-plus-boot-starter对应，mybatis-plus依赖包则是mybatis.mapper-locations，否则会有映射失败的bug
+- MP框架中，依赖mybatis-plus-boot-starter与配置mybatis-plus.mapper-locations对应，mybatis-plus依赖包则是mybatis.mapper-locations，否则会有映射失败的bug
+- 导入admin依赖的时候发现部分版本有问题，2.2.0相对稳定
+- SpringBoot Admin关于安全认证，网上都是关于Spring Security的教程，至于如何关于Satoken的配置暂且没有，项目里在全局过滤器里放开actuator路径

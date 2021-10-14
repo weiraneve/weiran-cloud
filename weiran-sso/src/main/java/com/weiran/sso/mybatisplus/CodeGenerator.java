@@ -30,7 +30,7 @@ public class CodeGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-//        gc.setOutputDir(projectPath + "\\jouavcloud-message" + "/src/main/java");
+//        gc.setOutputDir(projectPath + "\\weirancloud-message" + "/src/main/java");
         gc.setOutputDir(projectPath + "/src/main/java");
         // TODO 设置用户名
         gc.setAuthor("Weiran");
@@ -98,7 +98,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输入文件名称
-                // return projectPath + "\\jouavcloud-message" + "/message-dal/src/main/resources/mapper/"
+                // return projectPath + "\\weirancloud-message" + "/message-dal/src/main/resources/mapper/"
                 //         + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "Mapper" + StringPool.DOT_XML;
                 return projectPath + "/weiran-sso/src/main/resources/mapper/" + pc.getModuleName()
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
@@ -108,7 +108,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输入文件名称
-//                return projectPath + "\\jouavcloud-message" + "/message-dal/src/main/java/com/jouav/jouavcloudmessage/dal/model/"
+//                return projectPath + "\\weirancloud-message" + "/message-dal/src/main/java/com/weiran/weirancloudmessage/dal/model/"
 //                        + tableInfo.getEntityName() + StringPool.DOT_JAVA;
                 return projectPath + "/weiran-sso/src/main/java/com/weiran/sso/model/" + pc.getModuleName()
                         + tableInfo.getEntityName() + StringPool.DOT_JAVA;
@@ -118,7 +118,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输入文件名称
-//                return projectPath + "\\jouavcloud-message" + "/message-dal/src/main/java/com/jouav/jouavcloudmessage/dal/mapper/"
+//                return projectPath + "\\weirancloud-message" + "/message-dal/src/main/java/com/weiran/weirancloudmessage/dal/mapper/"
 //                        + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "Mapper" + StringPool.DOT_JAVA;
                 return projectPath + "/weiran-sso/src/main/java/com/weiran/sso/mapper/"
                         + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "Mapper" + StringPool.DOT_JAVA;
@@ -128,7 +128,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输入文件名称
-//                return projectPath + "\\jouavcloud-message" + "/message-biz/src/main/java/com/jouav/jouavcloudmessage/biz/manager/"
+//                return projectPath + "\\weirancloud-message" + "/message-biz/src/main/java/com/weiran/weirancloudmessage/biz/manager/"
 //                        + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "Manager" + StringPool.DOT_JAVA;
                 return projectPath + "/weiran-sso/src/main/java/com/weiran/sso/manager/"
                         + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "Manager" + StringPool.DOT_JAVA;
@@ -138,7 +138,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输入文件名称
-//                return projectPath + "\\jouavcloud-message" + "/message-biz/src/main/java/com/jouav/jouavcloudmessage/biz/manager/impl/"
+//                return projectPath + "\\weirancloud-message" + "/message-biz/src/main/java/com/weiran/weirancloudmessage/biz/manager/impl/"
 //                        + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "ManagerImpl" + StringPool.DOT_JAVA;
                 return projectPath + "/weiran-sso/src/main/java/com/weiran/sso/manager/impl/"
                         + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "ManagerImpl" + StringPool.DOT_JAVA;
@@ -148,7 +148,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输入文件名称
-//                return projectPath + "\\jouavcloud-message" + "/message-api/src/main/java/com/jouav/jouavcloudmessage/api/controller/"
+//                return projectPath + "\\weirancloud-message" + "/message-api/src/main/java/com/weiran/weirancloudmessage/api/controller/"
 //                        + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "Controller" + StringPool.DOT_JAVA;
                 return projectPath + "/weiran-sso/src/main/java/com/weiran/sso/controller/"
                         + tableInfo.getEntityName().substring(0, tableInfo.getEntityName().length() - 2) + "Controller" + StringPool.DOT_JAVA;
@@ -188,7 +188,7 @@ public class CodeGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setEntityLombokModel(true);
-        // strategy.setTablePrefix("jouav_"); // 表名前缀
+        // strategy.setTablePrefix("weiran_"); // 表名前缀
         // TODO 指定生成的bean的数据库表名
         String[] dataTable = new String[]{
                 "user", "role", "role_permission", "permission"

@@ -26,7 +26,7 @@ public class SaTokenConfigure implements WebMvcConfigurer {
         return new SaServletFilter()
                 // 指定 拦截路由 与 放行路由
                 .addInclude("/**")
-                .addExclude("/favicon.ico", "/login", "/isOrLogin")
+                .addExclude("/favicon.ico", "/login", "/isOrLogin", "/actuator/**")
                 // 认证函数: 每次请求执行
                 .setAuth(r -> {
                     System.out.println("---------- 进入Sa-Token全局认证 -----------");

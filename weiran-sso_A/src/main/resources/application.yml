@@ -75,7 +75,7 @@ sa-token:
 #    # Redis服务器连接端口
 #    port: 6379
 #    # Redis服务器连接密码（默认为空）
-#    password: 123456
+#    password: nacos 123456
 
 mybatis-plus:
   configuration:
@@ -101,6 +101,6 @@ logging:
    basic:
      enable: true
      username: weiran
-     password: weiran1234
+     password: nacos
 
 

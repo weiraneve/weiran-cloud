@@ -15,6 +15,7 @@
         <module>weiran-mqtt</module>
         <module>weiran-stu</module>
         <module>weiran-mission</module>
+        <module>weiran-admin</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>

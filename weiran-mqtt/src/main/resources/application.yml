@@ -33,5 +33,5 @@ rabbitmq:
   mqtt:
     url: tcp://localhost:1883
     username: weiran
-    password: weiran
+    password: weiran1234 weiran
     defaultTopic: testTopic
