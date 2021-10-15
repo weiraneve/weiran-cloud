@@ -1,9 +1,8 @@
 ## 拥有的技术栈与功能：
 一些自己玩的Demo，贻笑大方
 
-- 鉴权框架SaToken
-- 完成SSO、OAuth2、网关统一鉴权等登录与权限功能。
-- 分布式事务框架-TX-LCN、网关-SpringCloud Gateway、服务注册与发现-Nacos、持久层-MyBatisPlus、MQTT-RabbitMq即时通信
+- stu模块简单集成了安全框架SaToken完成鉴权与登录。
+- 分布式事务框架TX-LCN、网关SpringCloud Gateway、服务注册与发现使用Nacos、业务的持久层MyBatisPlus、MQTT-RabbitMq即时通信
 、Elastic Apm监控、Sleuth + Zipkin分布式链路追踪、SpringBoot Admin监控
 
 ## 出现的疑难杂症

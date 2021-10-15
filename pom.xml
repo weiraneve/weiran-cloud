@@ -8,13 +8,8 @@
         <module>weiran-common</module>
         <module>weiran-txserver</module>
         <module>weiran-gateway</module>
-        <module>weiran-oauth2</module>
-        <module>weiran-sso</module>
-        <module>weiran-sso_A</module>
-        <module>weiran-oauth2-A</module>
         <module>weiran-mqtt</module>
         <module>weiran-stu</module>
-        <module>weiran-mission</module>
         <module>weiran-admin</module>
     </modules>
 
