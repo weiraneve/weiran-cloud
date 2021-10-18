@@ -1,8 +1,8 @@
 ## 拥有的技术栈与功能：
 一些自己玩的Demo，贻笑大方
 
-- stu模块简单集成了安全框架SaToken完成鉴权与登录。
-- 分布式事务框架TX-LCN、网关SpringCloud Gateway、服务注册与发现使用Nacos、业务的持久层MyBatisPlus、MQTT-RabbitMq即时通信
+- Uaa用户认证中心模块简单集成了安全框架SaToken完成鉴权与登录。
+- 网关SpringCloud Gateway、服务注册与发现使用Nacos、业务的持久层MyBatisPlus、MQTT-RabbitMq即时通信
 、Elastic Apm监控、Sleuth + Zipkin分布式链路追踪、SpringBoot Admin监控
 
 ## 出现的疑难杂症
@@ -12,7 +12,7 @@
 - 有时候即便是官方封装的工具类似乎在兼容使用上还有点问题
 - 父模块里不要引入过多依赖，尽量只控制必要的版本，而不是通用引入。
 - SaToken引入后，网关模块可以把Spring Security依赖给舍弃，避免Spring Security的login的界面出现
-- studentmanager模块pom中引入了一个解决bootstrap配置文件无效的依赖
+- uaa模块pom中引入了一个解决bootstrap配置文件无效的依赖
 - 引入mysql等sql连接依赖后，要么在启动类排除类，要么在配置文件里随意配置一个。
 - alone-redis 引入依赖后可以在配置文件中配置，但一定要看清楚业务redis与权限或者自己设置但数据的redis是否能对应上
 - 很多功能使用时，需要注意是否在本模块以及引入依赖，比如thymeleaf
@@ -32,3 +32,5 @@
 - MP框架中，依赖mybatis-plus-boot-starter与配置mybatis-plus.mapper-locations对应，mybatis-plus依赖包则是mybatis.mapper-locations，否则会有映射失败的bug
 - 导入admin依赖的时候发现部分版本有问题，2.2.0相对稳定
 - SpringBoot Admin关于安全认证，网上都是关于Spring Security的教程，至于如何关于Satoken的配置暂且没有，项目里在全局过滤器里放开actuator路径
+- 提示加载不到主类参考 https://blog.csdn.net/qq_37870901/article/details/88921400
+- 

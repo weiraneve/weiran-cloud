@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "stu模块登陆",
+			"name": "uaa模块登陆",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -18,7 +18,7 @@
 					}
 				],
 				"url": {
-					"raw": "127.0.0.1:8901/studentmanager/login?username=sun&password=123",
+					"raw": "127.0.0.1:8901/uaa/login?username=sun&password=123",
 					"host": [
 						"127",
 						"0",
@@ -27,7 +27,7 @@
 					],
 					"port": "8901",
 					"path": [
-						"studentmanager",
+						"uaa",
 						"login"
 					],
 					"query": [
@@ -163,12 +163,12 @@
 			"response": []
 		},
 		{
-			"name": "网关-stu模块的登陆",
+			"name": "网关-uaa模块的登陆",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8901/studentmanager/login?username=sun&password=123",
+					"raw": "http://127.0.0.1:8901/uaa/login?username=sun&password=123",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -178,7 +178,7 @@
 					],
 					"port": "8901",
 					"path": [
-						"studentmanager",
+						"uaa",
 						"login"
 					],
 					"query": [
@@ -196,12 +196,12 @@
 			"response": []
 		},
 		{
-			"name": "网关-stu模块的页面权限",
+			"name": "网关-uaa模块的页面权限",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8901/studentmanager/gatewayTest",
+					"raw": "http://127.0.0.1:8901/uaa/gatewayTest",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -211,7 +211,7 @@
 					],
 					"port": "8901",
 					"path": [
-						"studentmanager",
+						"uaa",
 						"gatewayTest"
 					]
 				}
@@ -219,12 +219,12 @@
 			"response": []
 		},
 		{
-			"name": "网关-stu-查询是否登陆",
+			"name": "网关-uaa-查询是否登陆",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8901/studentmanager/isOrLogin",
+					"raw": "http://127.0.0.1:8901/uaa/isOrLogin",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -234,7 +234,7 @@
 					],
 					"port": "8901",
 					"path": [
-						"studentmanager",
+						"uaa",
 						"isOrLogin"
 					]
 				}
@@ -242,12 +242,12 @@
 			"response": []
 		},
 		{
-			"name": "网关-stu-注销",
+			"name": "网关-uaa-注销",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8901/studentmanager/logout",
+					"raw": "http://127.0.0.1:8901/uaa/logout",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -257,7 +257,7 @@
 					],
 					"port": "8901",
 					"path": [
-						"studentmanager",
+						"uaa",
 						"logout"
 					]
 				}

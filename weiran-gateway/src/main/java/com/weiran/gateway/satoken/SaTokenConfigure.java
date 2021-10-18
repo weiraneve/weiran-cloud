@@ -10,8 +10,9 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 网关利用全局过滤器来处理跨域问题
+ * 这里网关全局过滤器会与uaa有所冲突，暂且关闭网关统一登录鉴权
  */
-@Configuration
+//@Configuration
 public class SaTokenConfigure {
 
     /**
@@ -22,13 +23,13 @@ public class SaTokenConfigure {
     public SaReactorFilter getSaReactorFilter() {
         return new SaReactorFilter()
                 .addInclude("/**")
-                .addExclude("/favicon.ico", "/studentmanager/logout", "/studentmanager/isOrLogin")
+                .addExclude("/favicon.ico", "/uaa/logout", "/uaa/isOrLogin")
                 .setAuth(r -> {
                      System.out.println("---------- 网关全局认证");
                     // 登录验证 -- 拦截所有路由，并排除登陆接口 用于开放登录
-                    SaRouter.match("/**", "/studentmanager/login", () -> StpUtil.checkLogin());
+                    SaRouter.match("/**", "/uaa/login", () -> StpUtil.checkLogin());
                     // 权限认证 -- 不同模块, 校验不同权限
-                    SaRouter.match("/studentmanager/gatewayTest", () -> StpUtil.checkPermissionOr("test", "student"));
+                    SaRouter.match("/uaa/gatewayTest", () -> StpUtil.checkPermissionOr("test", "student"));
 
                 })
                 .setError(e -> {

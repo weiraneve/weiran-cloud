@@ -6,10 +6,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>weiran-common</module>
-        <module>weiran-txserver</module>
         <module>weiran-gateway</module>
         <module>weiran-mqtt</module>
-        <module>weiran-stu</module>
+        <module>weiran-uaa</module>
         <module>weiran-admin</module>
     </modules>
 
