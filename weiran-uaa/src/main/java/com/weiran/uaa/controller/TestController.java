@@ -3,7 +3,7 @@ package com.weiran.uaa.controller;
 import cn.dev33.satoken.annotation.*;
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
-import com.weiran.uaa.util.AjaxJson;
+import com.weiran.uaa.obj.AjaxJson;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -42,6 +42,11 @@ public class TestController {
             System.out.println("没有登陆");
         }
         return AjaxJson.getSuccessData(tokenInfo);
+    }
+
+    @RequestMapping("tokenInfo01")
+    public boolean tokenInfo01() {
+        return true;
     }
 
     // 以注解方式启用 Basic 校验

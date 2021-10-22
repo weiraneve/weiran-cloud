@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.weiran.uaa.manager.UserManager;
 import com.weiran.uaa.model.UserDO;
 import com.weiran.uaa.service.UserService;
-import com.weiran.uaa.util.AjaxResult;
+import com.weiran.uaa.obj.AjaxResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,18 +48,26 @@ public class UserServiceImpl implements UserService {
 
         StpUtil.login(SaSecureUtil.md5(username)); // 这里有个bug，不能用StpUseUtil封装的工具类，否则有bug
 
-        if (!StpUtil.hasRole("student")) {
+        if (StpUtil.hasRole("student") && StpUtil.hasRole("test") && StpUtil.hasRole("teacher")) {
+            log.info("student或test或teacher角色认证");
+        } else if (StpUtil.hasRole("admin")) {
+            log.info("admin角色认证");
+        } else {
             ajaxResult.setSuccess(false);
             ajaxResult.setCode(ajaxResult.CODE_WARNING);
             ajaxResult.setMessage("角色认证有问题");
-            log.info("角色认证有问题");
         }
-        if (!StpUtil.hasPermission("student")) {
+
+        if (StpUtil.hasPermission("student") && StpUtil.hasPermission("test") && StpUtil.hasPermission("teacher")) {
+            log.info("student或test或teacher权限认证");
+        } else if (StpUtil.hasPermission("admin")) {
+            log.info("admin权限认证");
+        } else {
             ajaxResult.setSuccess(false);
             ajaxResult.setCode(ajaxResult.CODE_WARNING);
             ajaxResult.setMessage("权限认证有问题");
-            log.info("权限认证有问题");
         }
+
 
         ajaxResult.setCode(ajaxResult.CODE_SUCCESS);
         ajaxResult.setSuccess(true);

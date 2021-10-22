@@ -2,9 +2,6 @@
 server:
   port: 8205
 
-service-url:
-  uaa-service: http://localhost:8061
-
 spring:
   application:
     name: weiran-gateway
@@ -23,13 +20,27 @@ spring:
       routes:
         # 当前路由的标识，唯一
         - id: weiran-uaa
-          uri: ${service-url.uaa-service}
+          # lb指的是负载均衡，后面是具体微服务在nacos中的标识
+          uri: lb://weiran-uaa
           # 断言（条件判断，返回之时boolean，转发请求要满足的条件）
           predicates:
             - Path=/uaa/**
+          # 过滤器（在请求传递的过程中，对请求做一些事）
           filters:
             # 在请求转发之前去掉一层路径
             - StripPrefix=1
+
+        - id: weiran-mission
+          uri: lb://weiran-mission
+          predicates:
+            - Path=/mission/**
+          filters:
+            - StripPrefix=1
+
+    discovery:
+      locator:
+        enabled: true #开启从注册中心动态创建路由的功能
+        lower-case-service-id: true #使用小写服务名，默认是大写
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

@@ -1,6 +1,6 @@
 package com.weiran.uaa.service;
 
-import com.weiran.uaa.util.AjaxResult;
+import com.weiran.uaa.obj.AjaxResult;
 
 public interface UserService {
 

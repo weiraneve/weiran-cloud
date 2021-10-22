@@ -1,0 +1,23 @@
+# 端口
+server:
+  port: 8062
+
+spring:
+  application:
+    name: weiran-mission
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+# 封装返回体方法有bug
+#feign:
+#  hystrix:
+#    enabled: true #在Feign中开启Hystrix
+#  compression:
+#    request:
+#      enabled: false #是否对请求进行GZIP压缩
+#      mime-types: text/xml,application/xml,application/json #指定压缩的请求数据类型
+#      min-request-size: 2048 #超过该大小的请求会被压缩
+#    response:
+#      enabled: false #是否对响应进行GZIP压缩

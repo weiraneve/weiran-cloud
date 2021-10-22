@@ -2,7 +2,7 @@
 一些自己玩的Demo，贻笑大方
 
 - Uaa用户认证中心模块简单集成了安全框架SaToken完成鉴权与登录。
-- 网关SpringCloud Gateway、服务注册与发现使用Nacos、业务的持久层MyBatisPlus、MQTT-RabbitMq即时通信
+- 网关SpringCloud Gateway、服务注册与发现使用Nacos、业务的持久层MyBatisPlus、MQTT-RabbitMq即时通信、Feign服务客户端模块
 、Elastic Apm监控、Sleuth + Zipkin分布式链路追踪、SpringBoot Admin监控
 
 ## 出现的疑难杂症
@@ -33,4 +33,5 @@
 - 导入admin依赖的时候发现部分版本有问题，2.2.0相对稳定
 - SpringBoot Admin关于安全认证，网上都是关于Spring Security的教程，至于如何关于Satoken的配置暂且没有，项目里在全局过滤器里放开actuator路径
 - 提示加载不到主类参考 https://blog.csdn.net/qq_37870901/article/details/88921400
+- Feign调用服务，回调降级和封装返回结构体似乎会影响服务调用
 - 

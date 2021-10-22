@@ -7,29 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="weiran-admin" />
         <module name="weiran-common" />
         <module name="weiran-gateway" />
         <module name="weiran-mqtt" />
-        <module name="weiran-sso_A" />
-        <module name="weiran-stu" />
-        <module name="weiran-oauth2-A" />
-        <module name="weiran-mission-biz" />
-        <module name="weiran-sso" />
-        <module name="weiran-mission-dal" />
-        <module name="weiran-oauth2" />
-        <module name="weiran-txserver" />
-        <module name="weiran-mission-api" />
+        <module name="weiran-uaa" />
+        <module name="weiran-mission" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mission" target="1.8" />
       <module name="untitled" target="8" />
+      <module name="weiran-mission-api" target="1.8" />
+      <module name="weiran-mission-biz" target="1.8" />
+      <module name="weiran-mission-dal" target="1.8" />
+      <module name="weiran-oauth2" target="1.8" />
+      <module name="weiran-oauth2-A" target="1.8" />
+      <module name="weiran-sso" target="1.8" />
       <module name="weiran-sso-A" target="8" />
-      <module name="weiran-uaa" target="8" />
+      <module name="weiran-sso_A" target="1.8" />
+      <module name="weiran-stu" target="1.8" />
+      <module name="weiran-txserver" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="weiran-admin" options="-parameters" />
       <module name="weiran-common" options="-parameters" />
       <module name="weiran-gateway" options="-parameters" />
       <module name="weiran-mission" options="-parameters" />

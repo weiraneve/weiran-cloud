@@ -1,4 +1,4 @@
-package com.weiran.uaa.util;
+package com.weiran.uaa.obj;
 
 import lombok.Data;
 

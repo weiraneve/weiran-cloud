@@ -3,7 +3,7 @@ package com.weiran.uaa.controller;
 
 import cn.dev33.satoken.stp.StpUtil;
 import com.weiran.uaa.service.UserService;
-import com.weiran.uaa.util.AjaxResult;
+import com.weiran.uaa.obj.AjaxResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -70,42 +70,4 @@ public class LoginController {
         return "当前会话是否登录：" + StpUtil.isLogin();
     }
 
-    /**
-      * @description 显示验证码
-      */
-//    @GetMapping("/checkCode")
-//    public void generateCpacha(HttpServletRequest request, HttpServletResponse response,
-//                               @RequestParam(value="vl",defaultValue="4",required=false) Integer vl,
-//                               @RequestParam(value="w",defaultValue="110",required=false) Integer w,
-//                               @RequestParam(value="h",defaultValue="39",required=false) Integer h){
-//        CpachaUtil cpachaUtil = new CpachaUtil(vl, w, h);
-//        String generatorVCode = cpachaUtil.generatorVCode();
-//        request.getSession().setAttribute("code", generatorVCode);
-//        BufferedImage generatorRotateVCodeImage = cpachaUtil.generatorRotateVCodeImage(generatorVCode, true);
-//        try {
-//            ImageIO.write(generatorRotateVCodeImage, "gif", response.getOutputStream());
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-
-    //验证功能
-//        if(StringUtils.isEmpty(code)){
-//            ajaxResult.setSuccess(false);
-//            ajaxResult.setMessage("请填验证码");
-//            return ajaxResult;
-//        }
-//        if(StringUtils.isEmpty(session.getAttribute("code"))){
-//            ajaxResult.setSuccess(false);
-//            ajaxResult.setMessage("会话时间过长，请刷新");
-//            return ajaxResult;
-//        }
-//        else{
-//            if(!code.equalsIgnoreCase((String) session.getAttribute("code"))){
-//                ajaxResult.setSuccess(false);
-//                ajaxResult.setMessage("验证码错误");
-//                return ajaxResult;
-//            }
-//        }
 }

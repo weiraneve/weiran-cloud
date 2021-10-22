@@ -1,4 +1,4 @@
-package com.weiran.uaa.util;
+package com.weiran.mission.obj;
 
 import java.io.Serializable;
 import java.util.List;

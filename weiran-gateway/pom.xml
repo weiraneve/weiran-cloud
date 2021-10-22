@@ -40,13 +40,11 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-
-        <!--gateway-->
+        <!--gateway 与spring-boot-starter-web冲突-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
-
         <!-- 熔断支持 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
