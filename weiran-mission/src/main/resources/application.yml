@@ -3,12 +3,22 @@ server:
   port: 8062
 
 spring:
+  profiles:
+    active: weiran
   application:
     name: weiran-mission
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
+
+logging:
+  # 日志文件地址
+  config: classpath:logback-spring.xml
+  # 配置Logstash地址
+  logstash:
+    address: 127.0.0.1:4560
+
 
 # 封装返回体方法有bug
 #feign:
