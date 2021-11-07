@@ -24,11 +24,13 @@ public class TestController {
         return "网关成功对misoon模块鉴权!!!";
     }
 
+    // Feign 调用 uaa模块接口，返回封装返回体
     @RequestMapping("/tokenInfo")
     public AjaxJson getUaaAj() {
         return uaaClient.tokenInfo();
     }
 
+    // Feign 调用 uaa模块接口，返回简单的布尔值
     @RequestMapping("/tokenInfo01")
     public boolean getUaaAj01() {
         return uaaClient.tokenInfo01();

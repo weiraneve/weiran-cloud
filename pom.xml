@@ -11,6 +11,7 @@
         <module>weiran-uaa</module>
         <module>weiran-admin</module>
         <module>weiran-mission</module>
+        <module>weiran-sentinel</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>
@@ -31,7 +32,7 @@
         <java.version>1.8</java.version>
         <saToken.version>1.26.0</saToken.version>
         <spring.cloud-version>Hoxton.SR8</spring.cloud-version>
-        <spring.cloud-alibaba>2.2.5.RELEASE</spring.cloud-alibaba>
+        <spring.cloud-alibaba>2.2.2.RELEASE</spring.cloud-alibaba>
         <mybatisPlus-version>3.4.1</mybatisPlus-version>
     </properties>
 

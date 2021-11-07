@@ -12,6 +12,7 @@
         <module name="weiran-gateway" />
         <module name="weiran-mqtt" />
         <module name="weiran-uaa" />
+        <module name="weiran-sentinel" />
         <module name="weiran-mission" />
       </profile>
     </annotationProcessing>
@@ -42,6 +43,7 @@
       <module name="weiran-mqtt" options="-parameters" />
       <module name="weiran-oauth2" options="-parameters" />
       <module name="weiran-oauth2-A" options="-parameters" />
+      <module name="weiran-sentinel" options="-parameters" />
       <module name="weiran-sso" options="-parameters" />
       <module name="weiran-sso_A" options="-parameters" />
       <module name="weiran-stu" options="-parameters" />

@@ -1,0 +1,42 @@
+server:
+  port: 8401
+spring:
+  application:
+    name: weiran-sentinel
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 配置Nacos地址
+    sentinel:
+      transport:
+        dashboard: localhost:8080 # 配置sentinel dashboard地址
+        heartbeat-interval-ms: 500
+        port: 8719 # 客户端端口
+      eager: true # 取消控制台的懒加载
+      # 可以用Nacos存储Sentinel控制台规则
+      datasource:
+        ds1:
+          nacos:
+            username: nacos
+            password: nacos
+            server-addr: localhost:8848
+            dataId: ${spring.application.name}-config
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
+# 调用mission模块，测试sentinel服务降级
+service-url:
+  user-service: localhost:8062
+
+# 管理节点配置
+management:
+  endpoints:
+    web:
+      # 开放指定节点
+      exposure:
+        include: '*'
+
+feign:
+  sentinel:
+    enabled: true #打开sentinel对feign的支持

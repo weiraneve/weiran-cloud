@@ -12,6 +12,11 @@
     <artifactId>weiran-uaa</artifactId>
 
     <dependencies>
+        <!--actuator服务监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!-- admin-->
         <dependency>
             <groupId>de.codecentric</groupId>

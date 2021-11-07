@@ -12,6 +12,14 @@ spring:
       discovery:
         server-addr: localhost:8848
 
+# 管理节点配置
+management:
+  endpoints:
+    web:
+      # 开放指定节点 /actuator/（info, health, beans, env, metrics）
+      exposure:
+        include: '*'
+
 logging:
   # 日志文件地址
   config: classpath:logback-spring.xml

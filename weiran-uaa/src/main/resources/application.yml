@@ -80,9 +80,11 @@ mybatis-plus:
 logging:
   config: classpath:logback.xml
 
+# 管理节点配置
 management:
   endpoints:
     web:
+      # 开放指定节点
       exposure:
         include: '*'
   endpoint:

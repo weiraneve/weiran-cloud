@@ -1,9 +1,14 @@
 ## 拥有的技术栈与功能：
-一些自己玩的Demo，贻笑大方
+一些自己玩的微服务Demo，贻笑大方
 
-- Uaa用户认证中心模块简单集成了安全框架SaToken完成鉴权与登录。
-- 网关SpringCloud Gateway、服务注册与发现使用Nacos、业务的持久层MyBatisPlus、MQTT-RabbitMq即时通信、Feign服务客户端模块
-、Elastic Apm监控、Sleuth + Zipkin分布式链路追踪、SpringBoot Admin监控
+- uaa模块集成用户认证中心模块简单集成了安全框架SaToken完成鉴权与登录。
+- gateway模块集成了Springcloud Gateway 与 SaToken框架的网关统一鉴权功能，实现了uaa模块登陆与认证，网关鉴权。
+- mqtt模块集成了RabbitMq的mqtt的功能，集成度比较简单。
+- admin模块集成了SpringBoot Admin 微服务应用监控。
+- mission模块集成了Feign、与一些测试的功能。
+- sentinel模块集成了Feign与sentinel。
+- 总的技术栈有：网关SpringCloud Gateway、服务注册与发现使用Nacos、业务的持久层MyBatisPlus、MQTT-RabbitMq即时通信、Feign服务客户端模块
+、Elastic Apm监控、Sleuth + Zipkin分布式链路追踪、SpringBoot Actuator、SpringBoot Admin监控、ELK、Sentinel、
 
 ## 出现的疑难杂症
 - satoken依赖引入时，网关要和内部服务分开，不要直接在父级pom引入Sa-Token,sa-token-spring-boot-starter 和 sa-token-reactor-spring-boot-starter，格子选择一个，一个对应Servlet模型比如Zuul，一个对应Reactor模型，如SpringCloud Gateway，切不可直接在一个项目里同时引入这两个依赖，否则会造成项目无法启动，并且要映入redis集成包，实现网关与子服务通过Redis来同步数据
@@ -34,4 +39,7 @@
 - SpringBoot Admin关于安全认证，网上都是关于Spring Security的教程，至于如何关于Satoken的配置暂且没有，项目里在全局过滤器里放开actuator路径
 - 提示加载不到主类参考 https://blog.csdn.net/qq_37870901/article/details/88921400
 - Feign调用服务，回调降级和封装返回结构体似乎会影响服务调用
+- Sentinel引入版本与父模块spring.cloud-alibaba依赖版本有关系，2.1.0.RELEASE目前看起来可用
+- sentinel依赖版本与feign版本似乎有影响，目前springcloud版本与alibaba的2.2.2.RELEASE是可行的
+- sentinel 配置持久化到nacos时，yaml配置文件中nacos的username和password要加上，否则无法使用
 - 
