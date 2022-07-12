@@ -1,6 +1,6 @@
 package com.weiran.mqtt.controller;
 
-import com.weiran.common.obj.ResultMsgObj;
+import com.weiran.rabbitmq.rabbitmq.ResultMsgObj;
 import com.weiran.mqtt.gateway.MqttGateway;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
