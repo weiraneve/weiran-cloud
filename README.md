@@ -2,7 +2,7 @@
 一些自己玩的微服务Demo，贻笑大方
 
 - uaa模块集成用户认证中心模块简单集成了安全框架SaToken完成鉴权与登录。
-- gateway模块集成了Springcloud Gateway 与 SaToken框架的网关统一鉴权功能，实现了uaa模块登陆与认证，网关鉴权。
+- gateway模块集成了SpringCloud Gateway 与 SaToken框架的网关统一鉴权功能，实现了uaa模块登陆与认证，网关鉴权。
 - mqtt模块集成了RabbitMq的mqtt的功能，集成度比较简单。
 - admin模块集成了SpringBoot Admin 微服务应用监控。
 - mission模块集成了Feign、与一些测试的功能。
