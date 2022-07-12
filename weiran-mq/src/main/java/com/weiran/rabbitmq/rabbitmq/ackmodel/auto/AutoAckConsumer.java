@@ -1,7 +1,7 @@
 package com.weiran.rabbitmq.rabbitmq.ackmodel.auto;
 
 import com.weiran.rabbitmq.rabbitmq.RabbitMqConstants;
-import com.weiran.rabbitmq.rabbitmq.SeckillMessage;
+import com.weiran.rabbitmq.common.SeckillMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

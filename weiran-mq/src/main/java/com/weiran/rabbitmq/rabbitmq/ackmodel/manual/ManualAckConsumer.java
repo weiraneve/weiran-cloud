@@ -3,7 +3,7 @@ package com.weiran.rabbitmq.rabbitmq.ackmodel.manual;
 import cn.hutool.json.JSONUtil;
 import com.rabbitmq.client.Channel;
 import com.weiran.rabbitmq.rabbitmq.RabbitMqConstants;
-import com.weiran.rabbitmq.rabbitmq.SeckillMessage;
+import com.weiran.rabbitmq.common.SeckillMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

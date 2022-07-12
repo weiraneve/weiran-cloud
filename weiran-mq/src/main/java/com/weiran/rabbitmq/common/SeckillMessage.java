@@ -1,4 +1,4 @@
-package com.weiran.rabbitmq.rabbitmq;
+package com.weiran.rabbitmq.common;
 
 
 import lombok.Data;

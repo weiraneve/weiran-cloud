@@ -12,7 +12,7 @@
         <module>weiran-admin</module>
         <module>weiran-mission</module>
         <module>weiran-sentinel</module>
-        <module>weiran-rabbitmq</module>
+        <module>weiran-mq</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>

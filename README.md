@@ -9,7 +9,7 @@
 - sentinel模块集成了Feign与sentinel。
 - 总的技术栈有：网关SpringCloud Gateway、服务注册与发现使用Nacos、业务的持久层MyBatisPlus、MQTT-RabbitMq即时通信、Feign服务客户端模块
 、Elastic Apm监控、Sleuth + Zipkin分布式链路追踪、SpringBoot Actuator、SpringBoot Admin监控、ELK、Sentinel、
-- rabbitmq模块集成了RabbitMQ。
+- mq模块集成了RabbitMQ、RocketMQ
 
 # 出现的疑难杂症
 - satoken依赖引入时，网关要和内部服务分开，不要直接在父级pom引入Sa-Token,sa-token-spring-boot-starter 和 sa-token-reactor-spring-boot-starter，格子选择一个，一个对应Servlet模型比如Zuul，一个对应Reactor模型，如SpringCloud Gateway，切不可直接在一个项目里同时引入这两个依赖，否则会造成项目无法启动，并且要映入redis集成包，实现网关与子服务通过Redis来同步数据
