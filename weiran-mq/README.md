@@ -1,2 +1,2 @@
 # 参考
-https://github.com/fiuty/exercisegroup
+[RabbitMQ部分代码参考](https://github.com/fiuty/exercisegroup)
