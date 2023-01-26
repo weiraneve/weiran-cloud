@@ -26,7 +26,6 @@ public class ManualAckConsumer {
     public void consumeMsg(SeckillMessage seckillMessage, Channel channel, @Header(AmqpHeaders.DELIVERY_TAG) Long tag) throws IOException {
         try {
             log.info("基于MANUAL的手工确认消费模式-消费者监听消费消息,消息投递标记：{},内容为：{} ", tag, JSONUtil.toJsonStr(seckillMessage));
-            log.warn("写入表失败: {}", JSONUtil.toJsonStr(seckillMessage));
             // 执行完业务逻辑后，手动进行确认消费，其中第一个参数为：消息的分发标识(全局唯一);第二个参数：是否允许批量确认消费
             channel.basicAck(tag, false);
         } catch (Exception e) {
