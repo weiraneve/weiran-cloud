@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: weiran-graphql
+server:
+  port: 8080

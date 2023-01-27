@@ -13,6 +13,7 @@
         <module>weiran-mission</module>
         <module>weiran-sentinel</module>
         <module>weiran-mq</module>
+        <module>weiran-graphql</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>
