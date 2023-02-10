@@ -1,0 +1,11 @@
+server:
+  port: 8060
+
+#连接apollo的配置
+app:
+  id: SampleApp
+apollo:
+  meta: http://localhost:8080
+  bootstrap:
+    enabled: true
+    namespaces: application

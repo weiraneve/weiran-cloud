@@ -14,6 +14,7 @@
         <module>weiran-sentinel</module>
         <module>weiran-mq</module>
         <module>weiran-graphql</module>
+        <module>weiran-apollo</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>
