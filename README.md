@@ -45,3 +45,7 @@
 - Sentinel引入版本与父模块spring.cloud-alibaba依赖版本有关系，2.1.0.RELEASE目前看起来可用
 - sentinel依赖版本与feign版本似乎有影响，目前springcloud版本与alibaba的2.2.2.RELEASE是可行的
 - sentinel 配置持久化到nacos时，yaml配置文件中nacos的username和password要加上，否则无法使用
+- apollo 根据官方的quick启动可以运行，而官方的release却启动不成功。
+
+# 参考与引用
+- [SpringBoot整合Canal+RabbitMQ监听数据变更](https://mp.weixin.qq.com/s/JluMiJzDckqcceWkkGHVsg)
