@@ -1,6 +1,6 @@
 package com.weiran.graphql.query;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import lombok.RequiredArgsConstructor;
 import com.weiran.graphql.entity.Vehicle;
 import com.weiran.graphql.service.VehicleService;

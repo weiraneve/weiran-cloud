@@ -13,3 +13,7 @@ spring:
     hibernate:
       ddl-auto: update
     database: mysql
+
+graphql:
+  servlet:
+    mapping: /graphql

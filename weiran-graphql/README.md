@@ -1,6 +1,7 @@
 # 参考
 - [部分代码参考](https://github.com/gaohanghang/springboot-graphql)
 - [apollo-client sandbox官网](https://apollo-fullstack-tutorial.herokuapp.com/graphql)
+- [SpringBoot GraphQL Demo](https://github.com/Loading-Life/spring-graphql-demo)
 
 # 简介
 跑起来后，postman上用`graphql`模式调试。mutation和query分别如下模板。
@@ -28,3 +29,6 @@ query {
 ```
 
 json的query模板:`{"query": "{vehicles(count: 1){id,type,modelCode}}"}`
+
+- 调试工具GraphIQL ${address}/graphiql
+- 调试工具Voyager ${address}/voyager

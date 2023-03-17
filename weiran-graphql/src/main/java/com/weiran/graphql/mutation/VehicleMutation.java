@@ -1,6 +1,6 @@
 package com.weiran.graphql.mutation;
 
-import com.coxautodev.graphql.tools.GraphQLMutationResolver;
+import graphql.kickstart.tools.GraphQLMutationResolver;
 import lombok.RequiredArgsConstructor;
 import com.weiran.graphql.entity.Vehicle;
 import com.weiran.graphql.service.VehicleService;
