@@ -1,7 +1,9 @@
 schema {
   query: Query
   mutation: Mutation
+  subscription: Subscription
 }
+
 
 type Vehicle {
   id: ID!,
@@ -18,4 +20,8 @@ type Query {
 
 type Mutation {
   createVehicle(type: String!, modelCode: String!, brandName: String, launchDate: String):Vehicle
+}
+
+type Subscription {
+  getVehicleUpdate(id: ID):Vehicle
 }

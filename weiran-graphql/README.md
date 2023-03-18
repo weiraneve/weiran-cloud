@@ -28,7 +28,20 @@ query {
 }
 ```
 
+```
+subscription {
+  getVehicleUpdate(id: 1) 
+  {
+    id, 
+    type, 
+    modelCode
+	}
+}
+```
+
 json的query模板:`{"query": "{vehicles(count: 1){id,type,modelCode}}"}`
 
 - 调试工具GraphIQL ${address}/graphiql
 - 调试工具Voyager ${address}/voyager
+- 调试工具Altair ${address}/altair
+- 调试工具Playground ${address}/playground
