@@ -15,6 +15,7 @@
         <module>weiran-mq</module>
         <module>weiran-graphql</module>
         <module>weiran-apollo</module>
+        <module>weiran-db</module>
     </modules>
 
     <groupId>com.weiran.cloud</groupId>
